@@ -3,59 +3,106 @@
 /* Common
 /*
 /*****************************************************************************/
-
-/* Global Reset */
-* {
-  margin: 0;
-  padding: 0;
+html, body {
+  font-size: 150%
+  height: 100%;
 }
-
-html, body { height: 100%; }
 
 body {
-  background-color: #FFF;
-  font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
-  text-align: center;
+  color: #333;
+
+  font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
+h1, h2, h3, h4, h5, h6 { }
 
-h1 { margin-bottom: 1em; }
+h1 {
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size:3.2rem;
+  font-weight: normal;
+  margin-bottom: 1em;
+}
+
 p { margin: 1em 0; }
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.page-header {
+  text-transform: uppercase;
+  padding: 0;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.page-header-title {
+  font-size: 2.5em;
+  line-height: 1;
+  text-decoration: none;
+  color: #000;
+}
+
+.page-header-title:visited {
+  color: #000;
+}
+
 
 /*****************************************************************************/
 /*
 /* Home
 /*
 /*****************************************************************************/
-.posts {
-  list-style-type: none;
-  margin-bottom: 2em;
+.post-list {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
 }
 
-.posts li {
-  line-height: 1.75em;
+.post-list-item {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  margin-bottom: 30px;
 }
 
-.posts span {
-  color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
+.post-list-item-date {
+  text-transform: uppercase;
+  font-size: 1em;
+  color: #979797;
+  margin-bottom: 0;
 }
 
+.post-list-item-title {
+  font-size: 2em;
+  line-height: 1.1;
+  margin-bottom: 0;
+  transition: color .2s linear;
+}
+
+.post-list-item-tagline {
+  font-size: 1.25em;
+  font-style: italic;
+  line-height: 1.625;
+  margin-top: 0;
+}
 /*****************************************************************************/
 /*
 /* Site
 /*
 /*****************************************************************************/
 
-.site {
+.container {
   font-size: 115%;
   text-align: justify;
   width: 42em;
@@ -69,6 +116,7 @@ a:visited { color: #a0a; }
 }
 
 .title {
+  font-size:3.2rem;
   display: inline-block;
   margin-bottom: 2em;
 }
@@ -128,10 +176,15 @@ a:visited { color: #a0a; }
 /*****************************************************************************/
 
 /* standard */
+
+.post a {
+  text-decoration: underline;
+}
+
 .post pre {
   border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
+  background-color: #fff;
+  padding: .5em;
 }
 
 .post ul, .post ol {
@@ -140,7 +193,7 @@ a:visited { color: #a0a; }
 
 .post code {
   border: 1px solid #ddd;
-  background-color: #eef;
+  background-color: #fff;
   padding: 0 .2em;
 }
 

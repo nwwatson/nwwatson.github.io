@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2014-02-26 18:27:52
-categories: jekyll update
+title:  "Setting Up the Play Framework"
+date:   2014-11-11 08:08:00
+categories: angularjs javascript yeoman bower
 ---
-
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
 To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
 
@@ -12,7 +11,7 @@ Jekyll also offers powerful support for code snippets:
 
 {% highlight ruby %}
 def print_hi(name)
-  puts "Hi, #{name}"
+puts "Hi, #{name}"
 end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
