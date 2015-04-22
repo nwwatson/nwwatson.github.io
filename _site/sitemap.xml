@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://nicholaswwatson.me</loc>
+    </url>
+    
+    
+    <url>
+        <loc>http://nicholaswwatson.me/404.html</loc>
+    </url>
+    
+    <url>
+        <loc>http://nicholaswwatson.me/about/index.html</loc>
+    </url>
+    
+    <url>
+        <loc>http://nicholaswwatson.me/feed.xml</loc>
+    </url>
+    
+    <url>
+        <loc>http://nicholaswwatson.me/</loc>
+    </url>
+    
+    <url>
+        <loc>http://nicholaswwatson.me/css/main.css</loc>
+    </url>
+    
+    <url>
+        <loc>http://nicholaswwatson.me/search.json</loc>
+    </url>
+    
+    <url>
+        <loc>http://nicholaswwatson.me/sitemap.xml</loc>
+    </url>
+    
+
+    
+    <url>
+        <loc>http://nicholaswwatson.me/jekyll/update/2015/04/19/welcome-to-jekyll.html</loc>
+    </url>
+    
+</urlset>
