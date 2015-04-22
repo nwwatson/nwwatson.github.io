@@ -32,7 +32,7 @@ need to understand better and read up on it daily.
 
 **Share what you've read with co-workers.** Sharing is an important part of the learning
 process. By sharing, you'll gain other vantage points on a particular issue. You will
- also be able to learn if others around you have similar interests or have complimenary
+ also be able to learn if others around you have similar interests or have complimentary
  interests.
 
  **Put it to practice.** Put your new found skills to practice, but be carefully not to
