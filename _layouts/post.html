@@ -18,11 +18,8 @@
     <article class="notepad-post-content post tag-simple">
       <div>{{ content }}</div>
     </article>
-    <div class="cf"></div>
-    {% if site.share %}{% include share.html %}{% endif %}
-    <div class="cf"></div>
-    {% include signoff.html %}
 
+    {% if site.share %}<div class="cf"></div>{% include share.html %}{% endif %}
     <div class="cf"></div>
     {% if site.disqus_shortname and page.comments == true %}
       <section class="notepad-disqus row">
