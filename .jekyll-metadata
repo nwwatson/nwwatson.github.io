@@ -185,3 +185,12 @@
 "/Users/nicholaswatson/Development/github/nwwatson.github.io/_includes/signoff.html":
   mtime: 2015-04-22 11:44:20.000000000 -04:00
   deps: []
+"/Users/nicholaswatson/Development/github/nwwatson.github.io/_posts/2015-04-19-thrity-minutes-a-day.markdown":
+  mtime: 2015-04-22 12:36:05.000000000 -04:00
+  deps:
+  - "/Users/nicholaswatson/Development/github/nwwatson.github.io/_includes/head.html"
+  - "/Users/nicholaswatson/Development/github/nwwatson.github.io/_includes/header.html"
+  - "/Users/nicholaswatson/Development/github/nwwatson.github.io/_includes/signoff.html"
+  - "/Users/nicholaswatson/Development/github/nwwatson.github.io/_includes/footer.html"
+  - "/Users/nicholaswatson/Development/github/nwwatson.github.io/_includes/scripts.html"
+  - "/Users/nicholaswatson/Development/github/nwwatson.github.io/_layouts/post.html"
