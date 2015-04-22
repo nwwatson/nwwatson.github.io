@@ -3,6 +3,7 @@ layout: post
 title:  "The Importance of 30 Minutes a Day"
 date:   2015-04-19 19:35:12
 categories: learning
+comments: true
 ---
 
 One of the most important things that a software developer can do is to continuously
@@ -41,7 +42,7 @@ impact on your work. Its always nice to find a awesome new library, but having t
 many awesome new libraries in your project will ultimately cause clutter.
 
 **Contribute back.** Have you found a better way to solve a problem? Have you modified
-someone elses technique for use in your daily work? Contribute it back using the
+someone else's technique for use in your daily work? Contribute it back using the
 blogs comments, or blog about it yourself.
 
 **Learning is continuous.** Don't just be a Googler, searching aimlessly for solutions.
