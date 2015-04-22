@@ -4,6 +4,8 @@ title:  "The Importance of 30 Minutes a Day"
 date:   2015-04-19 19:35:12
 categories: learning
 comments: true
+description: >
+  One of the most important things that a software developer can do is to continuously learn.
 ---
 
 One of the most important things that a software developer can do is to continuously

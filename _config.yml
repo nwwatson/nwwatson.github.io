@@ -1,11 +1,10 @@
 # Site settings
 title: Nicholas W. Watson
-email: your-email@domain.com
+email: nicholas.watson@nickonsoftware.com
 disqus_shortname: nicholaswatson
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Husband, Father, God fearing VP of Technology at Gleason Technology.
+  Thoughts on technology, software and management. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
