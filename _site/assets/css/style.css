@@ -11,7 +11,8 @@ body {
   font-family: "Open Sans", sans-serif;
   height: auto;
   min-height: 100%;
-  line-height: 1; }
+  line-height: 1;
+  background-color: #F9F3F1;  }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif; }
@@ -32,7 +33,7 @@ header, main, footer {
   z-index: 1; }
 
 main, .notepad-share-icons, .notepad-disqus {
-  background: white; }
+  background: #55BD1F; }
 
 .animated-post {
   background: transparent; }
@@ -81,7 +82,7 @@ main, .notepad-share-icons, .notepad-disqus {
       text-align: center;
       padding: 0.3125rem; }
       .notepad-blog-menu ul li a {
-        color: white;
+        color: #55BD1F;
         display: block;
         width: 100%;
         height: 100%;
@@ -89,7 +90,7 @@ main, .notepad-share-icons, .notepad-disqus {
       .notepad-blog-menu ul li.notepad-mobile-close-btn {
         padding-right: 1.25rem; }
         .notepad-blog-menu ul li.notepad-mobile-close-btn a {
-          color: white; }
+          color: #55BD1F; }
     .notepad-blog-menu ul.opened {
       -webkit-transform: translate3d(0, 0, 0);
       -ms-transform: translate3d(0, 0, 0);
@@ -131,10 +132,10 @@ main, .notepad-share-icons, .notepad-disqus {
             width: auto;
             height: auto; }
             .notepad-blog-menu ul li a:hover {
-              border-bottom: 0.1875rem solid #e51843; } }
+              border-bottom: 0.1875rem solid #55BD1F; } }
 
 .notepad-site-head .notepad-site-head-menu {
-  background: white; }
+  background: #55BD1F; }
   .notepad-site-head-menu { text-align: center;}
   .notepad-site-head .notepad-site-head-menu .notepad-blog-logo {
     display: inline-block;
@@ -168,12 +169,12 @@ main, .notepad-share-icons, .notepad-disqus {
   .notepad-site-head .notepad-site-head-content .notepad-site-head-title-bg {
     display: inline-block;
     padding: 0.625rem;
-    background: #e51843;
+    background: #55BD1F;
     line-height: 1.1; }
   .notepad-site-head .notepad-site-head-content h1, .notepad-site-head .notepad-site-head-content h2 {
     margin: 0;
     padding: 0;
-    color: white;
+    color: #55BD1F;
     text-transform: uppercase; }
   .notepad-site-head .notepad-site-head-content h1 {
     padding-top: 4.375rem;
@@ -237,7 +238,7 @@ main, .notepad-share-icons, .notepad-disqus {
       display: block;
       font-size: 3.25rem;
       font-weight: 800;
-      color: #e51843;
+      color: #55BD1F;
       font-family: "Montserrat", sans-serif; }
     .notepad-content .notepad-index-post .notepad-post-meta .month-year {
       display: block;
@@ -289,8 +290,8 @@ main, .notepad-share-icons, .notepad-disqus {
       border-radius: 0.125rem;
       margin-bottom: 0.3125rem; }
       .notepad-content .notepad-index-post .notepad-index-post-tags a:hover {
-        color: #e51843;
-        border: 0.0625rem solid #e51843; }
+        color: #55BD1F;
+        border: 0.0625rem solid #55BD1F; }
   @media only screen and (min-width: 40.063em) {
     .notepad-content .notepad-index-post .notepad-index-post-tags {
       padding-top: 0.3125rem;
@@ -305,7 +306,7 @@ main, .notepad-share-icons, .notepad-disqus {
     margin-right: auto;
     margin-top: 1.5625rem;
     font-size: 0.8125rem;
-    color: white;
+    color: #55BD1F;
     background-color: black;
     font-weight: 600;
     padding: 0.625rem 2.5rem;
@@ -315,7 +316,7 @@ main, .notepad-share-icons, .notepad-disqus {
     width: 60%;
     border-radius: 0.125rem; }
     .notepad-content .notepad-index-post .notepad-post-read-more:hover {
-      background-color: #e51843; }
+      background-color: #55BD1F; }
   @media only screen and (min-width: 40.063em) {
     .notepad-content .notepad-index-post .notepad-post-read-more {
       width: auto;
@@ -338,8 +339,8 @@ nav.pagination {
     border: 0.125rem solid black; }
   nav.pagination .newer-posts:hover,
   nav.pagination .older-posts:hover {
-    border: 0.125rem solid #e51843;
-    color: #e51843; }
+    border: 0.125rem solid #55BD1F;
+    color: #55BD1F; }
   nav.pagination .newer-posts.faded,
   nav.pagination .older-posts.faded {
     color: gray;
@@ -362,14 +363,14 @@ nav.pagination {
     padding: 0;
     text-align: center; }
   .notepad-site-footer .copyright {
-    color: white;
+    color: #55BD1F;
     float: none;
     text-align: center;
     font-size: 0.8125rem;
     padding-top: 3.75rem;
     padding-bottom: 1.25rem; }
     .notepad-site-footer .copyright a {
-      color: white; }
+      color: #55BD1F; }
   .notepad-site-footer .social-icons {
     text-align: center;
     float: none;
@@ -438,7 +439,7 @@ nav.pagination {
     padding-bottom: 3.125rem;
     text-align: center; }
     .notepad-tags-container .notepad-tags-header .tag-name {
-      color: #e51843;
+      color: #55BD1F;
       text-transform: none; }
     @media only screen and (min-width: 40.063em) {
       .notepad-tags-container .notepad-tags-header {
@@ -556,7 +557,7 @@ figcaption {
 .highlight .cs { color: #3F6B5B; font-weight: bold} /* Comment.Special */
 .highlight .gd { color: #2020ff; background-color: #c8f2ea } /* Generic.Deleted */
 .highlight .ge { color: #000000} /* Generic.Emph */
-.highlight .gr { color: #ffffff; background-color: #ff0000 } /* Generic.Error */
+.highlight .gr { color: #55BD1F; background-color: #ff0000 } /* Generic.Error */
 .highlight .gh { color: #1014AD; font-weight: bold} /* Generic.Heading */
 .highlight .gi { color: #000000} /* Generic.Inserted */
 .highlight .go { color: #4000ff; font-weight: bold; background-color: #EFEFF7 } /* Generic.Output */
@@ -588,7 +589,7 @@ figcaption {
 .highlight .nt { color: #F06F00; font-weight: bold} /* Name.Tag */
 .highlight .nv { color: #8a2be2; text-decoration: underline} /* Name.Variable */
 .highlight .ow { color: #000000} /* Operator.Word */
-.highlight .w { color: #000000} /* Text.Whitespace */
+.highlight .w { color: #000000} /* Text.#55BD1Fspace */
 .highlight .mf { color: #00C226; text-decoration: underline} /* Literal.Number.Float */
 .highlight .mh { color: #00C226; text-decoration: underline} /* Literal.Number.Hex */
 .highlight .mi { color: #00C226; text-decoration: underline} /* Literal.Number.Integer */
@@ -798,7 +799,7 @@ figcaption {
   .mfp-preloader a {
     color: #cccccc; }
     .mfp-preloader a:hover {
-      color: white; }
+      color: #55BD1F; }
 
 .mfp-s-ready .mfp-preloader {
   display: none; }
@@ -834,7 +835,7 @@ button::-moz-focus-inner {
   opacity: 0.65;
   filter: alpha(opacity=65);
   padding: 0 0 18px 10px;
-  color: white;
+  color: #55BD1F;
   font-style: normal;
   font-size: 28px;
   font-family: Arial, Baskerville, monospace; }
@@ -848,7 +849,7 @@ button::-moz-focus-inner {
   color: #333333; }
 
 .mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
-  color: white;
+  color: #55BD1F;
   right: -6px;
   text-align: right;
   padding-right: 6px;
@@ -901,7 +902,7 @@ button::-moz-focus-inner {
 .mfp-arrow-left {
   left: 0; }
   .mfp-arrow-left:after, .mfp-arrow-left .mfp-a {
-    border-right: 17px solid white;
+    border-right: 17px solid #55BD1F;
     margin-left: 31px; }
   .mfp-arrow-left:before, .mfp-arrow-left .mfp-b {
     margin-left: 25px;
@@ -910,7 +911,7 @@ button::-moz-focus-inner {
 .mfp-arrow-right {
   right: 0; }
   .mfp-arrow-right:after, .mfp-arrow-right .mfp-a {
-    border-left: 17px solid white;
+    border-left: 17px solid #55BD1F;
     margin-left: 39px; }
   .mfp-arrow-right:before, .mfp-arrow-right .mfp-b {
     border-left: 27px solid #3f3f3f; }

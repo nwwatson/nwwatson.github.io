@@ -63,10 +63,10 @@
   mtime: 2015-04-22 10:26:40.000000000 -04:00
   deps: []
 "/Users/nicholaswatson/Development/github/nwwatson.github.io/assets/css/post.css":
-  mtime: 2015-04-22 11:43:34.000000000 -04:00
+  mtime: 2015-04-22 12:30:45.000000000 -04:00
   deps: []
 "/Users/nicholaswatson/Development/github/nwwatson.github.io/assets/css/style.css":
-  mtime: 2015-04-22 11:39:03.000000000 -04:00
+  mtime: 2015-04-22 12:34:43.000000000 -04:00
   deps: []
 "/Users/nicholaswatson/Development/github/nwwatson.github.io/assets/css/vendor/font-awesome.min.css":
   mtime: 2015-04-22 10:26:40.000000000 -04:00
@@ -174,7 +174,7 @@
   mtime: 2015-04-22 10:26:40.000000000 -04:00
   deps: []
 "/Users/nicholaswatson/Development/github/nwwatson.github.io/_posts/2015-04-19-welcome-to-my-random-thoughts.markdown":
-  mtime: 2015-04-22 12:21:07.000000000 -04:00
+  mtime: 2015-04-22 12:21:26.000000000 -04:00
   deps:
   - "/Users/nicholaswatson/Development/github/nwwatson.github.io/_includes/head.html"
   - "/Users/nicholaswatson/Development/github/nwwatson.github.io/_includes/header.html"
