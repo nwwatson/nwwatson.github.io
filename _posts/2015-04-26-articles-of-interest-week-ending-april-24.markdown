@@ -8,7 +8,7 @@ description: >
   This weeks articles of interest include a CloudKit introduction, managing large data sets in PostgreSQL, news on Rails 5, and basics that all developers should know about JavaScript.
 ---
 
- I like to share articles with my team that I find interesting. I like some of those articles to be outside their comfort zone. This weeks articles of interest include a CloudKit introduction, managing large data sets in PostgreSQL, news on Rails 5, and basics that all developers should know about JavaScript.
+ I like to share articles with my team that I find interesting. This weeks articles of interest include a CloudKit introduction, managing large data sets in PostgreSQL, news on Rails 5, and basics that all developers should know about JavaScript.
 
 ## [Managing big enough data in postgres](http://bit.ly/1QnKBDV)
 
