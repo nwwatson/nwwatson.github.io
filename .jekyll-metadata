@@ -31,7 +31,7 @@
   - "/Users/nicholaswatson/Development/github/nwwatson.github.io/_includes/scripts.html"
   - "/Users/nicholaswatson/Development/github/nwwatson.github.io/_layouts/home.html"
 "/Users/nicholaswatson/Development/github/nwwatson.github.io/_layouts/post.html":
-  mtime: 2015-04-22 11:40:31.000000000 -04:00
+  mtime: 2015-04-22 13:32:59.000000000 -04:00
   deps: []
 "/Users/nicholaswatson/Development/github/nwwatson.github.io/_layouts/page.html":
   mtime: 2015-04-22 10:40:03.000000000 -04:00
@@ -40,7 +40,7 @@
   mtime: 2015-04-22 10:26:40.000000000 -04:00
   deps: []
 "/Users/nicholaswatson/Development/github/nwwatson.github.io/_includes/header.html":
-  mtime: 2015-04-22 11:40:18.000000000 -04:00
+  mtime: 2015-04-22 13:42:20.000000000 -04:00
   deps: []
 "/Users/nicholaswatson/Development/github/nwwatson.github.io/_includes/footer.html":
   mtime: 2015-04-22 10:35:44.000000000 -04:00
@@ -63,10 +63,10 @@
   mtime: 2015-04-22 10:26:40.000000000 -04:00
   deps: []
 "/Users/nicholaswatson/Development/github/nwwatson.github.io/assets/css/post.css":
-  mtime: 2015-04-22 12:30:45.000000000 -04:00
+  mtime: 2015-04-22 13:12:08.000000000 -04:00
   deps: []
 "/Users/nicholaswatson/Development/github/nwwatson.github.io/assets/css/style.css":
-  mtime: 2015-04-22 12:34:43.000000000 -04:00
+  mtime: 2015-04-22 13:09:29.000000000 -04:00
   deps: []
 "/Users/nicholaswatson/Development/github/nwwatson.github.io/assets/css/vendor/font-awesome.min.css":
   mtime: 2015-04-22 10:26:40.000000000 -04:00
@@ -171,7 +171,7 @@
   mtime: 2015-04-22 10:26:40.000000000 -04:00
   deps: []
 "/Users/nicholaswatson/Development/github/nwwatson.github.io/_includes/scripts.html":
-  mtime: 2015-04-22 10:26:40.000000000 -04:00
+  mtime: 2015-04-22 13:27:40.000000000 -04:00
   deps: []
 "/Users/nicholaswatson/Development/github/nwwatson.github.io/_posts/2015-04-19-welcome-to-my-random-thoughts.markdown":
   mtime: 2015-04-22 12:21:26.000000000 -04:00
@@ -194,6 +194,16 @@
   - "/Users/nicholaswatson/Development/github/nwwatson.github.io/_includes/footer.html"
   - "/Users/nicholaswatson/Development/github/nwwatson.github.io/_includes/scripts.html"
   - "/Users/nicholaswatson/Development/github/nwwatson.github.io/_layouts/post.html"
+  - "/Users/nicholaswatson/Development/github/nwwatson.github.io/_includes/disqus_comments.html"
 "/Users/nicholaswatson/Development/github/nwwatson.github.io/CNAME":
-  mtime: 2015-04-22 13:25:08.000000000 -04:00
+  mtime: 2015-04-22 13:25:14.000000000 -04:00
   deps: []
+"/Users/nicholaswatson/Development/github/nwwatson.github.io/_posts/2015-04-26-articles-of-interest-week-ending-april-24.markdown":
+  mtime: 2015-04-26 22:57:20.000000000 -04:00
+  deps:
+  - "/Users/nicholaswatson/Development/github/nwwatson.github.io/_includes/head.html"
+  - "/Users/nicholaswatson/Development/github/nwwatson.github.io/_includes/header.html"
+  - "/Users/nicholaswatson/Development/github/nwwatson.github.io/_includes/disqus_comments.html"
+  - "/Users/nicholaswatson/Development/github/nwwatson.github.io/_includes/footer.html"
+  - "/Users/nicholaswatson/Development/github/nwwatson.github.io/_includes/scripts.html"
+  - "/Users/nicholaswatson/Development/github/nwwatson.github.io/_layouts/post.html"
