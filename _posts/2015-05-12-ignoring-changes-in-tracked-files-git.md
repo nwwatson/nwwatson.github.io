@@ -9,9 +9,9 @@ description: >
   but not have it committed each time you check in? Here's how.
 ---
 
-We use Rubinius in production, but in development Rubinuis is slow. Those few seconds of waiting for Rubinius to compile all your Ruby files add up, and I'm impatient.
+We use Rubinius in production, but in development Rubinuis is slow. Those few seconds of waiting for Rubinius to compile all your Ruby files add up and I'm impatient.
 
-To combat this problem, I like to be able to change the .ruby-version file (we use rbenv) to use the latest version of MRI. Naturally, we don't want this check in. Luckily, we can do this with git:
+To combat this problem, I like to be able to change the .ruby-version file (we use rbenv) to use the latest version of MRI. Naturally, we don't want to check this in. Luckily, we can do this with git:
 
 ```
 git update-index --assume-unchanged <file>
