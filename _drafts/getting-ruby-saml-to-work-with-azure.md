@@ -22,7 +22,7 @@ While I'm happy to write this quick tutorial, I'm not going to walk you through 
 
 ## Configure ruby-saml Settings
 
-```
+```ruby
   idp_metadata_parser = OneLogin::RubySaml::IdpMetadataParser.new
   # This does all the hard work. it grabs the federation metadata from Azure
   settings = idp_metadata_parser.parse_remote("https://login.microsoftonline.com/FunnyImNotGivingYouThis/federationmetadata/2007-06/federationmetadata.xml")
