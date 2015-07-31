@@ -38,8 +38,8 @@ Configure the ionic_push.rb file within config/initializers. You can view the en
 variables that are there, or change them for someting else.
 
 ```
+  
   IonicPush.setup do |config|
-    
     config.ionic_application_id = ENV["IONIC_APPLICATION_ID"]
 
     # ==> Configuration for the Private API Key
