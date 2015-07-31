@@ -41,5 +41,7 @@ variables that are there, or change them for someting else.
 
 ## Sending a Push Notification
 
+Sending a push notification is simple. All you need to have is an array of device tokens and a message.
+
 
 {% gist bcf7483dc464d1ad5835 %}
