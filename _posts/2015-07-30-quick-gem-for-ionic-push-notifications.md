@@ -2,7 +2,7 @@
 layout: post
 title:  "PushIonic - A Gem For Sending Push Notifications With Ionic.io"
 date:   2015-07-30 21:00:00
-categories: ruby, ionic, gem
+categories: ruby ionic gem
 comments: true
 description: >
   Introducing a PushIonic, a quick gem I put together
