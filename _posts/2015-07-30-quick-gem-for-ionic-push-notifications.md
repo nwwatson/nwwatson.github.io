@@ -38,6 +38,7 @@ Configure the ionic_push.rb file within config/initializers. You can view the en
 variables that are there, or change them for someting else.
 
 ```
+
 IonicPush.setup do |config|
   # ==> Configuration for the Ionic.io Application ID
   # The Application ID can be found on the dashboard of
@@ -57,9 +58,11 @@ IonicPush.setup do |config|
   # defaults to https://push.ionic.io
   # config.ionic_api_url = ENV["IONIC_API_URL"]
 end
+
 ```
 
 ## Sending a Push Notification
+
 
 ```
 # Create an array of device tokens you want to send to
