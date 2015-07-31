@@ -42,16 +42,4 @@ variables that are there, or change them for someting else.
 ## Sending a Push Notification
 
 
-{% highlight text %}
-# Create an array of device tokens you want to send to
-device_tokens = [
-  "APA91bEBoyoZ3EDXJbdjvzn2jdikRu7tdpz_65zkqfMDFTSNZfNgg-ohiNYQQ1TCTdjwqWZ",
-  "WSt1XklxZeVj1WtxVBZXMIpIEt3YVaDs3f2Hp5QVmkwB0QgJ48d6KHVrHZCJxTER52yK3b0"
-]
-
-# Create a PushService instance passing it a message and device tokens
-service = IonicPush::PushService.new("Is that you, John Wayne? Is this me?", device_tokens)
-
-# Call the notify! method to send the push notification
-service.notify!
-{% endhighlight %}
+{% gist bcf7483dc464d1ad5835 %}

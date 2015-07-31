@@ -638,5 +638,6 @@ iframe {
 }
 
 div.gist {
-  margin: 0 auto 2em auto
+  margin: 0 auto 2em auto;
+  width: 75%;
 }
