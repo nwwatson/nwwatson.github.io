@@ -39,9 +39,7 @@ variables that are there, or change them for someting else.
 
 ```
   IonicPush.setup do |config|
-    # ==> Configuration for the Ionic.io Application ID
-    # The Application ID can be found on the dashboard of
-    # https://apps.ionic.io/apps
+    
     config.ionic_application_id = ENV["IONIC_APPLICATION_ID"]
 
     # ==> Configuration for the Private API Key
