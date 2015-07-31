@@ -37,8 +37,7 @@ bundle exec rails g ionic_push:install
 Configure the ionic_push.rb file within config/initializers. You can view the environment 
 variables that are there, or change them for someting else.
 
-```
-  
+{% highlight text %}
   IonicPush.setup do |config|
     config.ionic_application_id = ENV["IONIC_APPLICATION_ID"]
 
@@ -55,7 +54,7 @@ variables that are there, or change them for someting else.
     # defaults to https://push.ionic.io
     # config.ionic_api_url = ENV["IONIC_API_URL"]
   end
-```
+{% endhighlight %}
 
 ## Sending a Push Notification
 
