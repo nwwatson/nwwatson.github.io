@@ -9,7 +9,7 @@ description: >
   to test Ionic.io's Push Notification Service
 ---
 
-We in the the middle of adding push notificaitons to our mobile application
+We are in the the middle of adding push notificaitons to our mobile application
 and started to look at available push notification services. We took a look
 at all the usual suspects such as Amazon SMS, Parse and Pusher. One service 
 that intrigued us with Ionic Push Notifications, because our application is
@@ -37,27 +37,7 @@ bundle exec rails g ionic_push:install
 Configure the ionic_push.rb file within config/initializers. You can view the environment 
 variables that are there, or change them for someting else.
 
-{% highlight text %}
-IonicPush.setup do |config|
-  # ==> Configuration for the Ionic.io Application ID
-  # The Application ID can be found on the dashboard of
-  # https://apps.ionic.io/apps
-  config.ionic_application_id = ENV["IONIC_APPLICATION_ID"]
-
-  # ==> Configuration for the Private API Key
-  # The Private API Key for your application can be found
-  # within the Settings of your application on
-  # https://apps.ionic.io/apps
-  config.ionic_api_key = ENV["IONIC_API_KEY"]
-
-  # ==> Configuration for the location of the API
-  # Refer to the Ionic documentation for the correct location
-  # Current documentation can be found here:
-  # http://docs.ionic.io/docs/push-sending-push and
-  # defaults to https://push.ionic.io
-  # config.ionic_api_url = ENV["IONIC_API_URL"]
-end
-{% endhighlight %}
+{% gist 0c12bfe317fc8c96e8b0 %}
 
 ## Sending a Push Notification
 
