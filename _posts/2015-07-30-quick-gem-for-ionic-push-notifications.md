@@ -37,7 +37,7 @@ bundle exec rails g ionic_push:install
 Configure the ionic_push.rb file within config/initializers. You can view the environment 
 variables that are there, or change them for someting else.
 
-```Ruby
+```
 IonicPush.setup do |config|
   # ==> Configuration for the Ionic.io Application ID
   # The Application ID can be found on the dashboard of
@@ -61,7 +61,7 @@ end
 
 ## Sending a Push Notification
 
-```Ruby
+```
 # Create an array of device tokens you want to send to
 device_tokens = [
   "APA91bEBoyoZ3EDXJbdjvzn2jdikRu7tdpz_65zkqfMDFTSNZfNgg-ohiNYQQ1TCTdjwqWZ",
