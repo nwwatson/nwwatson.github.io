@@ -16,7 +16,7 @@ that intrigued us with Ionic Push Notifications, because our application is
 written using the Ionic Framework.
 
 In order to test things out, we created a simple gem that would allow us to
-send push notifications using the service. IonicPush is a Ruby gem that provides 
+send push notifications using the service. [IonicPush](https://github.com/nwwatson/ionic_push) is a Ruby gem that provides 
 a simple to use interface with Ionic.io's Push Notification service. Work on this 
 is on-going, however the current version available works completely.
 
