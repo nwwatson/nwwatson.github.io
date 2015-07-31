@@ -45,3 +45,8 @@ Sending a push notification is simple. All you need to have is an array of devic
 
 
 {% gist bcf7483dc464d1ad5835 %}
+
+## Wrapping It Up
+
+Our experience so far has been really positive. Ionic Push Notifications were simple to integrate
+[by following their online documentation](http://docs.ionic.io/v1.0/docs/push-from-scratch).
