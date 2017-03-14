@@ -11,13 +11,15 @@ description: >
 
 We are in the the middle of adding push notificaitons to our mobile application
 and started to look at available push notification services. We took a look
-at all the usual suspects such as Amazon SMS, Parse and Pusher. One service 
+at all the usual suspects such as Amazon SMS, Parse and Pusher. One service
 that intrigued us with Ionic Push Notifications, because our application is
 written using the Ionic Framework.
 
+<!--more-->
+
 In order to test things out, we created a simple gem that would allow us to
-send push notifications using the service. [IonicPush](https://github.com/nwwatson/ionic_push) is a Ruby gem that provides 
-a simple to use interface with Ionic.io's Push Notification service. Work on this 
+send push notifications using the service. [IonicPush](https://github.com/nwwatson/ionic_push) is a Ruby gem that provides
+a simple to use interface with Ionic.io's Push Notification service. Work on this
 is on-going, however the current version available works completely.
 
 ## Installation
@@ -34,7 +36,7 @@ Run the Rails generator to install the initializer in to your Rails project.
 bundle exec rails g ionic_push:install
 ```
 
-Configure the ionic_push.rb file within config/initializers. You can view the environment 
+Configure the ionic_push.rb file within config/initializers. You can view the environment
 variables that are there, or change them for someting else.
 
 {% gist 0c12bfe317fc8c96e8b0 %}

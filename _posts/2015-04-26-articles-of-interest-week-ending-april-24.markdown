@@ -10,6 +10,8 @@ description: >
 
  I like to share articles with my team that I find interesting. This weeks articles of interest include a CloudKit introduction, managing large data sets in PostgreSQL, news on Rails 5, and basics that all developers should know about JavaScript.
 
+ <!--more-->
+
 ## [Managing big enough data in postgres](http://bit.ly/1QnKBDV)
 
 One of the largest problems for developers is keeping their applications fast and available in the face of

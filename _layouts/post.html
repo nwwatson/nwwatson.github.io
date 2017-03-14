@@ -2,37 +2,49 @@
 <html>
 <head>
 {% include head.html %}
-{% if site.dropcap %}<style type="text/css">@media only screen and (min-width:43.75em){.notepad-post-content div>p:first-child:first-letter{float:left;font-size:4.688rem;line-height:4.375rem;padding-top:.25rem;padding-right:.5rem;padding-left:.188rem;font-family:serif}}</style>{% endif %}
 </head>
-<body class="post-template" itemscope itemtype="http://schema.org/WebPage">
-  <main id="notepad-post-container-simple" class="notepad-post-container-simple" role="main">
-    {% include header.html %}
-    <div class="notepad-post-title-simple row">
-      <div class="small-12 columns">
-        <div class="notepad-post-meta-simple">
-          <h1>{{ page.title }}</h1>
-          <p>by <strong>{{ site.owner.name }}</strong> &#8212; {% assign tagsize = page.tags.size %}{% if tagsize != 0 %}on {% for tag in page.tags %}<a href="{{ site.url }}/tags/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip" title="Posts tagged with {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}&nbsp;&comma;&nbsp;{% endunless %}{% endfor %}{% endif %} <strong><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b %Y" }}</time></strong></p>
-        </div>
-      </div>
-    </div>
-    <article class="notepad-post-content post tag-simple">
-      <div>{{ content }}</div>
-    </article>
+<body class="home-template" itemscope itemtype="http://schema.org/WebPage">
 
-    {% if site.share %}<div class="cf"></div>{% include share.html %}{% endif %}
-    <div class="cf"></div>
-    {% if site.disqus_shortname and page.comments == true %}
-      <section class="notepad-disqus row">
-        <div class="small-12 columns">
-          <h1 class="notepad-comments-header">Comments</h1>
-          <div id="disqus_thread"></div>
-          {% include disqus_comments.html %}
-        </div>
-      </section>
-    {% endif %}
-    <div class="cf"></div>
-    {% include footer.html %}
-</main>
+  <div id="layout" class="pure-g">
+    {% include left_sidebar.html %}
+    <div class="content pure-u-1 pure-u-md-3-4">
+      <!-- A single blog post -->
+    	<section class="post">
+    		<header class="post-header">
+    			<div class="date">
+    				<time datetime="{{ page.date | date_to_xmlschema }}"><span class="day">{{ page.date | date: "%d" }}</span> <span class="month-year">{{ page.date | date: "%B %Y" }}</span></time>
+    			</div>
+
+    			<h2>
+    				<a href="{{ site.url }}{{ post.url }}">
+    						{{ page.title }}
+    				</a>
+    			</h2>
+    			<p class="post-meta">
+    				{% for tag in page.categories %}<a class="post-category post-category-pure" href="#" title="Other posts from the {{ tag | capitalize }} category">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}
+    			</p>
+    		</header>
+
+    			<div class="post-description">
+    				{{ content }}
+    			</div>
+    	</section>
+
+
+      {% if site.share %}<div class="cf"></div>{% include share.html %}{% endif %}
+      <div class="cf"></div>
+      {% if site.disqus_shortname and page.comments == true %}
+        <section class="notepad-disqus row">
+          <div class="small-12 columns">
+            <h1 class="notepad-comments-header">Comments</h1>
+            <div id="disqus_thread"></div>
+            {% include disqus_comments.html %}
+          </div>
+        </section>
+      {% endif %}
+  </div>
+</div>
+
 {% include scripts.html %}
 </body>
 </html>

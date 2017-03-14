@@ -4,11 +4,14 @@
 {% include head.html %}
 </head>
 <body class="home-template" itemscope itemtype="http://schema.org/WebPage">
-{% include header.html %}
-<main class="notepad-content" role="main">
-  {{ content }}
-</main>
-{% include footer.html %}
+
+  <div id="layout" class="pure-g">
+      {% include left_sidebar.html %}
+      <div class="content pure-u-1 pure-u-md-3-4">
+        {{ content }}
+      </div>
+    </div>
+
 {% include scripts.html %}
 </body>
 </html>

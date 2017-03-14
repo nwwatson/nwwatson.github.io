@@ -12,6 +12,7 @@ One of the most important things that a software developer can do is to continuo
 learn. Learning can happen "on the job", through experimentation, or reading and
 interacting with others in the community. Today, I want to talk about reading and
 interacting with others in the community.
+<!--more-->
 
 Here's how most developers work; they encounter a problem on the job and immediately
 reach out to google for a solution. The first person who

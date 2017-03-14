@@ -2,26 +2,26 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>THE IMPORTANCE OF 30 MINUTES A DAY &vert; NICHOLAS W. WATSON</title>
-<meta name="description" content="One of the most important things that a software developer can do is to continuously learn.
+<title>PUSHIONIC - A GEM FOR SENDING PUSH NOTIFICATIONS WITH IONIC.IO &vert; NICHOLAS W. WATSON</title>
+<meta name="description" content="Introducing a PushIonic, a quick gem I put together to test Ionic.io's Push Notification Service
 ">
 <meta name="keywords" content="">
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://localhost:4000/images/">
-<meta name="twitter:title" content="The Importance of 30 Minutes a Day">
-<meta name="twitter:description" content="One of the most important things that a software developer can do is to continuously learn.
+<meta name="twitter:title" content="PushIonic - A Gem For Sending Push Notifications With Ionic.io">
+<meta name="twitter:description" content="Introducing a PushIonic, a quick gem I put together to test Ionic.io's Push Notification Service
 ">
 <meta name="twitter:creator" content="@nwwatson">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="The Importance of 30 Minutes a Day">
-<meta property="og:description" content="One of the most important things that a software developer can do is to continuously learn.
+<meta property="og:title" content="PushIonic - A Gem For Sending Push Notifications With Ionic.io">
+<meta property="og:description" content="Introducing a PushIonic, a quick gem I put together to test Ionic.io's Push Notification Service
 ">
-<meta property="og:url" content="http://localhost:4000/learning/2015/04/19/thrity-minutes-a-day.html">
+<meta property="og:url" content="http://localhost:4000/ruby/ionic/gem/2015/07/30/quick-gem-for-ionic-push-notifications.html">
 <meta property="og:site_name" content="Nicholas W. Watson">
 
 <meta property="og:image" content="http://localhost:4000/images/">
@@ -29,7 +29,7 @@
 
 
 
-<link rel="canonical" href="http://localhost:4000/learning/2015/04/19/thrity-minutes-a-day.html">
+<link rel="canonical" href="http://localhost:4000/ruby/ionic/gem/2015/07/30/quick-gem-for-ionic-push-notifications.html">
 <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Nicholas W. Watson Feed">
 
 
@@ -73,68 +73,66 @@
     	<section class="post">
     		<header class="post-header">
     			<div class="date">
-    				<time datetime="2015-04-19T15:35:12-04:00"><span class="day">19</span> <span class="month-year">April 2015</span></time>
+    				<time datetime="2015-07-30T17:00:00-04:00"><span class="day">30</span> <span class="month-year">July 2015</span></time>
     			</div>
 
     			<h2>
     				<a href="http://localhost:4000">
-    						The Importance of 30 Minutes a Day
+    						PushIonic - A Gem For Sending Push Notifications With Ionic.io
     				</a>
     			</h2>
     			<p class="post-meta">
-    				<a class="post-category post-category-pure" href="#" title="Other posts from the Learning category">Learning</a>
+    				<a class="post-category post-category-pure" href="#" title="Other posts from the Ruby category">Ruby</a>&nbsp;<a class="post-category post-category-pure" href="#" title="Other posts from the Ionic category">Ionic</a>&nbsp;<a class="post-category post-category-pure" href="#" title="Other posts from the Gem category">Gem</a>
     			</p>
     		</header>
 
     			<div class="post-description">
-    				<p>One of the most important things that a software developer can do is to continuously
-learn. Learning can happen “on the job”, through experimentation, or reading and
-interacting with others in the community. Today, I want to talk about reading and
-interacting with others in the community.
-<!--more--></p>
+    				<p>We are in the the middle of adding push notificaitons to our mobile application
+and started to look at available push notification services. We took a look
+at all the usual suspects such as Amazon SMS, Parse and Pusher. One service
+that intrigued us with Ionic Push Notifications, because our application is
+written using the Ionic Framework.</p>
 
-<p>Here’s how most developers work; they encounter a problem on the job and immediately
-reach out to google for a solution. The first person who
-has a solution that “fixes” their problem wins. The issue with this approach is
-that you don’t know if the solution you’ve chosen is the best solution for your situation.
-What do you have to compare it to? Why did you select it? Is there a better
-solution out there?</p>
+<!--more-->
 
-<p>In order to combat this, I’ve encouraged my team members to take the first 30
-minutes of each day to learn. This can be done through blogs, newsletters, or news
-readers such as FlipBoard and Zite. Lets break this in to a quick process which
-occurs daily.</p>
+<p>In order to test things out, we created a simple gem that would allow us to
+send push notifications using the service. <a href="https://github.com/nwwatson/ionic_push">IonicPush</a> is a Ruby gem that provides
+a simple to use interface with Ionic.io’s Push Notification service. Work on this
+is on-going, however the current version available works completely.</p>
 
-<p><strong>Choose topics that interest you.</strong> Focus on the things you like doing and discover
-new techniques, open source libraries or tools that can help you. Take the time to
-compare what you currently do to what the author recommends. Is their way better?
-Can you improve the author’s technique? Can you contribute anything?</p>
+<h2 id="installation">Installation</h2>
 
-<p><strong>Identify something your weak at, and find sources to help you.</strong> Everyone has a
-weakness. Maybe you struggle with relational databases, or you just don’t understand
-why anyone would want to use a graph database. Choose a topic that you feel that you
-need to understand better and read up on it daily.</p>
+<p>Add the following to your Gemfile and bundle install</p>
 
-<p><strong>Share what you’ve read with co-workers.</strong> Sharing is an important part of the learning
-process. By sharing, you’ll gain other vantage points on a particular issue. You will
- also be able to learn if others around you have similar interests or have complimentary
- interests. If you’re the only developer, join local groups or connect on social networks
- with others.</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>gem 'ionic_push', github: 'nwwatson/ionic_push', branch: 'master'
+</code></pre>
+</div>
 
-<p><strong>Put it to practice.</strong> Put your new found skills to practice, but be carefully not to
-insert your new skill or technique in an area which will ultimately have a negative
-impact on your work. Its always nice to find a awesome new library, but having too
-many awesome new libraries in your project will ultimately cause clutter and lead to
-poor code quality.</p>
+<p>Run the Rails generator to install the initializer in to your Rails project.</p>
 
-<p><strong>Contribute back.</strong> Have you found a better way to solve a problem? Have you modified
-someone else’s technique for use in your daily work? Contribute it back using the
-blogs comments, or blog about it yourself.</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>bundle exec rails g ionic_push:install
+</code></pre>
+</div>
 
-<p><strong>Learning is continuous.</strong> Don’t just be a Googler, searching aimlessly for solutions.
-Take the time to learn emerging technologies, understand their costs and benefits, and
-grow your knowledge so that the next time you encounter a problem you are less likely to
-go to Google and more likely to solve the problem yourself.</p>
+<p>Configure the ionic_push.rb file within config/initializers. You can view the environment
+variables that are there, or change them for someting else.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/0c12bfe317fc8c96e8b0.js"> </script>
+
+<h2 id="sending-a-push-notification">Sending a Push Notification</h2>
+
+<p>Sending a push notification is simple. All you need to have is an array of device tokens and a message.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/bcf7483dc464d1ad5835.js"> </script>
+
+<h2 id="wrapping-it-up">Wrapping It Up</h2>
+
+<p>Our experience so far has been really positive. Ionic Push Notifications were simple to integrate
+<a href="http://docs.ionic.io/v1.0/docs/push-from-scratch">by following their online documentation</a>.</p>
 
     			</div>
     	</section>

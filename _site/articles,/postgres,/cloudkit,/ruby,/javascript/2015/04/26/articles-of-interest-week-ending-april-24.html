@@ -9,7 +9,7 @@
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="/images/">
+<meta name="twitter:image" content="http://localhost:4000/images/">
 <meta name="twitter:title" content="Articles of Interest for the Week Ending April 24">
 <meta name="twitter:description" content="This weeks articles of interest include a CloudKit introduction, managing large data sets in PostgreSQL, news on Rails 5, and basics that all developers should know about JavaScript.
 ">
@@ -21,16 +21,16 @@
 <meta property="og:title" content="Articles of Interest for the Week Ending April 24">
 <meta property="og:description" content="This weeks articles of interest include a CloudKit introduction, managing large data sets in PostgreSQL, news on Rails 5, and basics that all developers should know about JavaScript.
 ">
-<meta property="og:url" content="/articles,/postgres,/cloudkit,/ruby,/javascript/2015/04/26/articles-of-interest-week-ending-april-24.html">
+<meta property="og:url" content="http://localhost:4000/articles,/postgres,/cloudkit,/ruby,/javascript/2015/04/26/articles-of-interest-week-ending-april-24.html">
 <meta property="og:site_name" content="Nicholas W. Watson">
-<meta property="og:image" content="/images/">
+
+<meta property="og:image" content="http://localhost:4000/images/">
 
 
 
 
-
-<link rel="canonical" href="/articles,/postgres,/cloudkit,/ruby,/javascript/2015/04/26/articles-of-interest-week-ending-april-24.html">
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Nicholas W. Watson Feed">
+<link rel="canonical" href="http://localhost:4000/articles,/postgres,/cloudkit,/ruby,/javascript/2015/04/26/articles-of-interest-week-ending-april-24.html">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Nicholas W. Watson Feed">
 
 
 <!-- http://t.co/dKP3o1e -->
@@ -38,89 +38,95 @@
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
+<link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
 
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600,300,800,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="/assets/css/vendor/font-awesome.min.css">
-    <link rel="stylesheet" href="/assets/css/vendor/normalize.css">
-    <link rel="stylesheet" href="/assets/css/vendor/nprogress.css">
-    <link rel="stylesheet" href="/assets/css/vendor/foundation.min.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/post.css">
+<!--[if lte IE 8]>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-old-ie-min.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+<!--<![endif]-->
 
-
-
-
-
-<!-- Icons -->
-<!-- 16x16 -->
-<link rel="shortcut icon" href="/favicon.ico">
-<!-- 32x32 -->
-<link rel="shortcut icon" href="/favicon.png">
-<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
-<link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png">
-<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72-precomposed.png">
-<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png">
-<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144-precomposed.png">
-
+<link rel="stylesheet" href="http://localhost:4000/assets/css/styles.css">
 
 </head>
-<body class="post-template" itemscope itemtype="http://schema.org/WebPage">
-  <main id="notepad-post-container-simple" class="notepad-post-container-simple" role="main">
-    <header class="notepad-site-head">
-  <div class="notepad-site-head-menu">
-    <a href="/"><div class="title">Nicholas W. Watson</div></a>
-    <div class="clearfix"></div>
+<body class="home-template" itemscope itemtype="http://schema.org/WebPage">
+
+  <div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+      <h1 class="brand-title"><a class="brand-link" href="/">Nicholas Watson</a></h1>
+      <h2 class="brand-tagline">Technology, software, development.</h2>
+
+      <nav class="nav">
+          <ul class="nav-list">
+
+          </ul>
+      </nav>
   </div>
-</header>
+</div>
 
-    <div class="notepad-post-title-simple row">
-      <div class="small-12 columns">
-        <div class="notepad-post-meta-simple">
-          <h1>Articles of Interest for the Week Ending April 24</h1>
-          <p>by <strong>Nicholas W. Watson</strong> &#8212;  <strong><time datetime="2015-04-26T19:57:00-04:00">26 Apr 2015</time></strong></p>
-        </div>
-      </div>
-    </div>
-    <article class="notepad-post-content post tag-simple">
-      <div><p>I like to share articles with my team that I find interesting. This weeks articles of interest include a CloudKit introduction, managing large data sets in PostgreSQL, news on Rails 5, and basics that all developers should know about JavaScript.</p>
+    <div class="content pure-u-1 pure-u-md-3-4">
+      <!-- A single blog post -->
+    	<section class="post">
+    		<header class="post-header">
+    			<div class="date">
+    				<time datetime="2015-04-26T19:57:00-04:00"><span class="day">26</span> <span class="month-year">April 2015</span></time>
+    			</div>
 
-<h2 id="managing-big-enough-data-in-postgreshttpbitly1qnkbdv"><a href="http://bit.ly/1QnKBDV">Managing big enough data in postgres</a></h2>
+    			<h2>
+    				<a href="http://localhost:4000">
+    						Articles of Interest for the Week Ending April 24
+    				</a>
+    			</h2>
+    			<p class="post-meta">
+    				<a class="post-category post-category-pure" href="#" title="Other posts from the Articles, category">Articles,</a>&nbsp;<a class="post-category post-category-pure" href="#" title="Other posts from the Postgres, category">Postgres,</a>&nbsp;<a class="post-category post-category-pure" href="#" title="Other posts from the Cloudkit, category">Cloudkit,</a>&nbsp;<a class="post-category post-category-pure" href="#" title="Other posts from the Ruby, category">Ruby,</a>&nbsp;<a class="post-category post-category-pure" href="#" title="Other posts from the Javascript category">Javascript</a>
+    			</p>
+    		</header>
+
+    			<div class="post-description">
+    				<p>I like to share articles with my team that I find interesting. This weeks articles of interest include a CloudKit introduction, managing large data sets in PostgreSQL, news on Rails 5, and basics that all developers should know about JavaScript.</p>
+
+<p><!--more--></p>
+
+<h2 id="managing-big-enough-data-in-postgres"><a href="http://bit.ly/1QnKBDV">Managing big enough data in postgres</a></h2>
 
 <p>One of the largest problems for developers is keeping their applications fast and available in the face of
 large data sets. Many automatically look for NoSQL solutions to solve the problem tradinging data integrity and ACID compliance for speed. While NoSQL solutions have there place, its good to know how to tune your current
 relational database. This quick little article does that, explainging table table inheritance and table spaces.</p>
 
-<h2 id="working-with-cloudkit-in-ios-8httpbitly1evjejk"><a href="http://bit.ly/1EvjEJk">Working with CloudKit in iOS 8</a></h2>
+<h2 id="working-with-cloudkit-in-ios-8"><a href="http://bit.ly/1EvjEJk">Working with CloudKit in iOS 8</a></h2>
 
 <p>When Apple released CloudKit and Swift at WWDC 2014, I was intregued. From a distant view, it look as though Apple lowered the cost of entry for building cloud connected systems. Now, I realize that CloudKit, and the use of Apple’s cloud services is only available within its own ecosystem, which is a severe limitation if you need to build for iOS and another platform. However, in my minimal time I have spent with Swift, I’ve liked it. Building something with CloudKit is a goal for me, and this article just might be the start.</p>
 
-<h2 id="deadly-sins-of-ruby-metaprogramminghttpbitly1hisxc3"><a href="http://bit.ly/1HISXC3">7 Deadly Sins of Ruby Metaprogramming</a></h2>
+<h2 id="7-deadly-sins-of-ruby-metaprogramming"><a href="http://bit.ly/1HISXC3">7 Deadly Sins of Ruby Metaprogramming</a></h2>
 
 <p>Learning to metaprogram in Ruby will add a whole lot of possiblities to your code. Once you get started, your tempted to do it everywhere, however you must do so wisely. 7 Deadly Sins of Ruby Metaprogramming explains some of the gotchas that you can encounter. Its a must read for anyone interested in metaprogramming in Ruby.</p>
 
-<h2 id="why-rails-5--turbolinks-30--action-cable-matter-and-why-dhh-was-right-all-alonghttpbitly1fpkev6"><a href="http://bit.ly/1FpKeV6">Why Rails 5 / Turbolinks 3.0 / Action Cable matter, and why @dhh was right all along</a></h2>
+<h2 id="why-rails-5--turbolinks-30--action-cable-matter-and-why-dhh-was-right-all-along"><a href="http://bit.ly/1FpKeV6">Why Rails 5 / Turbolinks 3.0 / Action Cable matter, and why @dhh was right all along</a></h2>
 
 <p>This article gets a lot right. The advent of the JavaScript single page application has drastically complicated web development. While I have written single page applications, I can’t say that I enjoy it. It doesn’t matter if its Angular, Ember or Backbone, it adds additional complexity that makes building applications take more time. The additional time and cost associated with these applications means that its going to take you longer to get your product to market. What I loved about Rails is the ability to build web applications fast. I’m glad that the team takes ease of use seriously. I also can’t wait to see web sockets and web api baked in.</p>
 
-<h2 id="the-basics-of-variable-scope-in-javascripthttpbitly1gmyav1"><a href="http://bit.ly/1GmYav1">The Basics Of Variable Scope In JavaScript</a></h2>
+<h2 id="the-basics-of-variable-scope-in-javascript"><a href="http://bit.ly/1GmYav1">The Basics Of Variable Scope In JavaScript</a></h2>
 
 <p>Just getting started in JavaScript? Make sure you understand scope. Read about scope until you understand it. Once you understand scope, you can then move on to master the language. Once your done with scope, you may want to move on to understanding the <a href="http://bit.ly/1OWKw6F">Common Misconceptions About Inheritance in JavaScript</a></p>
 
 <p>Interested in more? Follow <a href="http://bit.ly/1DSTSgu">Tots on Programming on Flipboard</a></p>
-</div>
-    </article>
 
-    
-    <div class="cf"></div>
-    
-      <section class="notepad-disqus row">
-        <div class="small-12 columns">
-          <h1 class="notepad-comments-header">Comments</h1>
-          <div id="disqus_thread"></div>
-          <script type="text/javascript">
+    			</div>
+    	</section>
+
+
+      
+      <div class="cf"></div>
+      
+        <section class="notepad-disqus row">
+          <div class="small-12 columns">
+            <h1 class="notepad-comments-header">Comments</h1>
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
     var disqus_shortname = 'nicholaswatson'; // required: replace example with your forum shortname
 
@@ -140,24 +146,11 @@ relational database. This quick little article does that, explainging table tabl
     }());
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        </div>
-      </section>
-    
-    <div class="cf"></div>
-    
-</main>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
-    <script src="/assets/js/vendor/modernizr.js"></script>
-    <script src="/assets/js/foundation.min.js"></script>
-    
-    <script src="/assets/js/notepad.js"></script>
-    <script src="/assets/js/scripts.min.js"></script>
-    <script src="/assets/js/vendor/nprogress.js"></script>
-
-    <script>
-      $(document).foundation();
-    </script>
+          </div>
+        </section>
+      
+  </div>
+</div>
 
 
 <!-- Asynchronous Google Analytics snippet -->
@@ -170,10 +163,8 @@ relational database. This quick little article does that, explainging table tabl
   ga('create', 'UA-57714341-1', 'auto');
   ga('require', 'displayfeatures');
   ga('send', 'pageview');
-
 </script>
 
-<script>NProgress.start();var interval=setInterval(function(){NProgress.inc()},1000);jQuery(window).load(function(){clearInterval(interval);NProgress.done()});jQuery(window).unload(function(){NProgress.start()});</script>
 
 </body>
 </html>

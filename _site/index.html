@@ -8,7 +8,7 @@
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="/images/">
+<meta name="twitter:image" content="http://localhost:4000/images/">
 <meta name="twitter:title" content="The Blog of Nicholas W. Watson">
 <meta name="twitter:description" content="">
 <meta name="twitter:creator" content="@nwwatson">
@@ -18,16 +18,16 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="The Blog of Nicholas W. Watson">
 <meta property="og:description" content="">
-<meta property="og:url" content="/">
+<meta property="og:url" content="http://localhost:4000/">
 <meta property="og:site_name" content="Nicholas W. Watson">
-<meta property="og:image" content="/images/">
+
+<meta property="og:image" content="http://localhost:4000/images/">
 
 
 
 
-
-<link rel="canonical" href="/">
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Nicholas W. Watson Feed">
+<link rel="canonical" href="http://localhost:4000/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Nicholas W. Watson Feed">
 
 
 <!-- http://t.co/dKP3o1e -->
@@ -35,161 +35,196 @@
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
+<link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
 
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600,300,800,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="/assets/css/vendor/font-awesome.min.css">
-    <link rel="stylesheet" href="/assets/css/vendor/normalize.css">
-    <link rel="stylesheet" href="/assets/css/vendor/nprogress.css">
-    <link rel="stylesheet" href="/assets/css/vendor/foundation.min.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/post.css">
+<!--[if lte IE 8]>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-old-ie-min.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+<!--<![endif]-->
 
-
-
-
-
-<!-- Icons -->
-<!-- 16x16 -->
-<link rel="shortcut icon" href="/favicon.ico">
-<!-- 32x32 -->
-<link rel="shortcut icon" href="/favicon.png">
-<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
-<link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png">
-<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72-precomposed.png">
-<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png">
-<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144-precomposed.png">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/styles.css">
 
 </head>
 <body class="home-template" itemscope itemtype="http://schema.org/WebPage">
-<header class="notepad-site-head">
-  <div class="notepad-site-head-menu">
-    <a href="/"><div class="title">Nicholas W. Watson</div></a>
-    <div class="clearfix"></div>
+
+  <div id="layout" class="pure-g">
+      <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+      <h1 class="brand-title"><a class="brand-link" href="/">Nicholas Watson</a></h1>
+      <h2 class="brand-tagline">Technology, software, development.</h2>
+
+      <nav class="nav">
+          <ul class="nav-list">
+
+          </ul>
+      </nav>
   </div>
-</header>
+</div>
 
-<main class="notepad-content" role="main">
-  
+      <div class="content pure-u-1 pure-u-md-3-4">
+        <div class="posts">
 	
-    <article class="notepad-index-post post row">
-        <div class="small-12 medium-3 large-2 columns datetime">
-            <span class="notepad-post-meta">
-                <time datetime="2015-04-26T19:57:00-04:00">
-                    <span class="day">
-                        26
-                    </span>
-                    <span class="month-year">
-                        April 2015
-                    </span>
-                </time>
-            </span>
-        </div>
-        <div class="small-12 medium-9 large-10 columns">
-            <header class="notepad-post-header">
-                <h3 class="notepad-post-title">
-                    <a href="/articles,/postgres,/cloudkit,/ruby,/javascript/2015/04/26/articles-of-interest-week-ending-april-24.html">
-                        Articles of Interest for the Week Ending April 24
-                    </a>
-                </h3>
-            </header>
-            <section class="notepad-post-excerpt">
-                <p>I like to share articles with my team that I find interesting. This weeks articles of interest include a CloudKit introduction, managing large data sets in PostgreSQL, news on Rails 5, and basics that all developers should know about JavaScript. Managing big enough data in postgres One of the largest problems for developers is keeping their applications fast and available in the face of large data sets. Many automatically look for NoSQL solutions to solve the problem tradinging data integrity and ACID compliance for speed. While NoSQL solutions have there place, its good to know how to tune your current...</p>
-            </section>
+	<!-- A single blog post -->
+	<section class="post">
+		<header class="post-header">
+			<div class="date">
+				<time datetime="2015-07-30T17:00:00-04:00"><span class="day">30</span> <span class="month-year">July 2015</span></time>
+			</div>
 
-                <div class="notepad-index-post-tags">
-                <a href="/categories/index.html#articles,postgres,cloudkit,ruby,javascript" title="Other posts from the Articles, category">Articles,</a>&nbsp;<a href="/categories/index.html#articles,postgres,cloudkit,ruby,javascript" title="Other posts from the Postgres, category">Postgres,</a>&nbsp;<a href="/categories/index.html#articles,postgres,cloudkit,ruby,javascript" title="Other posts from the Cloudkit, category">Cloudkit,</a>&nbsp;<a href="/categories/index.html#articles,postgres,cloudkit,ruby,javascript" title="Other posts from the Ruby, category">Ruby,</a>&nbsp;<a href="/categories/index.html#articles,postgres,cloudkit,ruby,javascript" title="Other posts from the Javascript category">Javascript</a>
+			<h2>
+				<a href="http://localhost:4000/ruby/ionic/gem/2015/07/30/quick-gem-for-ionic-push-notifications.html">
+						PushIonic - A Gem For Sending Push Notifications With Ionic.io
+				</a>
+			</h2>
+			<p class="post-meta">
+				<a class="post-category post-category-pure" href="#" title="Other posts from the Ruby category">Ruby</a>&nbsp;<a class="post-category post-category-pure" href="#" title="Other posts from the Ionic category">Ionic</a>&nbsp;<a class="post-category post-category-pure" href="#" title="Other posts from the Gem category">Gem</a>
+			</p>
+		</header>
 
-                </div>
+			<div class="post-description">
+				<p>We are in the the middle of adding push notificaitons to our mobile application
+and started to look at available push notification services. We took a look
+at all the usual suspects such as Amazon SMS, Parse and Pusher. One service
+that intrigued us with Ionic Push Notifications, because our application is
+written using the Ionic Framework.</p>
 
-        </div>
-    </article>
+
+				<p>
+					<a href="http://localhost:4000/ruby/ionic/gem/2015/07/30/quick-gem-for-ionic-push-notifications.html">Continue Reading...</a>
+				<p>
+			</div>
+	</section>
 	
-    <article class="notepad-index-post post row">
-        <div class="small-12 medium-3 large-2 columns datetime">
-            <span class="notepad-post-meta">
-                <time datetime="2015-04-19T15:35:12-04:00">
-                    <span class="day">
-                        19
-                    </span>
-                    <span class="month-year">
-                        April 2015
-                    </span>
-                </time>
-            </span>
-        </div>
-        <div class="small-12 medium-9 large-10 columns">
-            <header class="notepad-post-header">
-                <h3 class="notepad-post-title">
-                    <a href="/learning/2015/04/19/thrity-minutes-a-day.html">
-                        The Importance of 30 Minutes a Day
-                    </a>
-                </h3>
-            </header>
-            <section class="notepad-post-excerpt">
-                <p>One of the most important things that a software developer can do is to continuously learn. Learning can happen “on the job”, through experimentation, or reading and interacting with others in the community. Today, I want to talk about reading and interacting with others in the community. Here’s how most developers work; they encounter a problem on the job and immediately reach out to google for a solution. The first person who has a solution that “fixes” their problem wins. The issue with this approach is that you don’t know if the solution you’ve chosen is the best solution for...</p>
-            </section>
+	<!-- A single blog post -->
+	<section class="post">
+		<header class="post-header">
+			<div class="date">
+				<time datetime="2015-05-12T04:18:00-04:00"><span class="day">12</span> <span class="month-year">May 2015</span></time>
+			</div>
 
-                <div class="notepad-index-post-tags">
-                <a href="/categories/index.html#learning" title="Other posts from the Learning category">Learning</a>
+			<h2>
+				<a href="http://localhost:4000/learning,/git/2015/05/12/ignoring-changes-in-tracked-files-git.html">
+						Ignoring Changes in Tracked Files with Git
+				</a>
+			</h2>
+			<p class="post-meta">
+				<a class="post-category post-category-pure" href="#" title="Other posts from the Learning, category">Learning,</a>&nbsp;<a class="post-category post-category-pure" href="#" title="Other posts from the Git category">Git</a>
+			</p>
+		</header>
 
-                </div>
+			<div class="post-description">
+				<p>We use Rubinius in production, but in development Rubinuis is slow. Those few seconds of waiting for Rubinius to compile all your Ruby files add up and I’m impatient.</p>
 
-        </div>
-    </article>
+
+				<p>
+					<a href="http://localhost:4000/learning,/git/2015/05/12/ignoring-changes-in-tracked-files-git.html">Continue Reading...</a>
+				<p>
+			</div>
+	</section>
 	
-    <article class="notepad-index-post post row">
-        <div class="small-12 medium-3 large-2 columns datetime">
-            <span class="notepad-post-meta">
-                <time datetime="2015-04-19T14:35:12-04:00">
-                    <span class="day">
-                        19
-                    </span>
-                    <span class="month-year">
-                        April 2015
-                    </span>
-                </time>
-            </span>
-        </div>
-        <div class="small-12 medium-9 large-10 columns">
-            <header class="notepad-post-header">
-                <h3 class="notepad-post-title">
-                    <a href="/2015/04/19/welcome-to-my-random-thoughts.html">
-                        Welcome
-                    </a>
-                </h3>
-            </header>
-            <section class="notepad-post-excerpt">
-                <p>Hi, I’m Nicholas Watson. I’m a developer and leader. I’m constantly digging in to “tech” in order to deliver products and services. My interests consist of software languages, the internet of things, and big data. I currently serve as Vice President of Technology at Gleason Technology, Inc.
-</p>
-            </section>
+	<!-- A single blog post -->
+	<section class="post">
+		<header class="post-header">
+			<div class="date">
+				<time datetime="2015-04-26T19:57:00-04:00"><span class="day">26</span> <span class="month-year">April 2015</span></time>
+			</div>
 
-                <div class="notepad-index-post-tags">
-                
+			<h2>
+				<a href="http://localhost:4000/articles,/postgres,/cloudkit,/ruby,/javascript/2015/04/26/articles-of-interest-week-ending-april-24.html">
+						Articles of Interest for the Week Ending April 24
+				</a>
+			</h2>
+			<p class="post-meta">
+				<a class="post-category post-category-pure" href="#" title="Other posts from the Articles, category">Articles,</a>&nbsp;<a class="post-category post-category-pure" href="#" title="Other posts from the Postgres, category">Postgres,</a>&nbsp;<a class="post-category post-category-pure" href="#" title="Other posts from the Cloudkit, category">Cloudkit,</a>&nbsp;<a class="post-category post-category-pure" href="#" title="Other posts from the Ruby, category">Ruby,</a>&nbsp;<a class="post-category post-category-pure" href="#" title="Other posts from the Javascript category">Javascript</a>
+			</p>
+		</header>
 
-                </div>
+			<div class="post-description">
+				<p>I like to share articles with my team that I find interesting. This weeks articles of interest include a CloudKit introduction, managing large data sets in PostgreSQL, news on Rails 5, and basics that all developers should know about JavaScript.</p>
 
-        </div>
-    </article>
+
+				<p>
+					<a href="http://localhost:4000/articles,/postgres,/cloudkit,/ruby,/javascript/2015/04/26/articles-of-interest-week-ending-april-24.html">Continue Reading...</a>
+				<p>
+			</div>
+	</section>
 	
+	<!-- A single blog post -->
+	<section class="post">
+		<header class="post-header">
+			<div class="date">
+				<time datetime="2015-04-19T15:35:12-04:00"><span class="day">19</span> <span class="month-year">April 2015</span></time>
+			</div>
+
+			<h2>
+				<a href="http://localhost:4000/learning/2015/04/19/thrity-minutes-a-day.html">
+						The Importance of 30 Minutes a Day
+				</a>
+			</h2>
+			<p class="post-meta">
+				<a class="post-category post-category-pure" href="#" title="Other posts from the Learning category">Learning</a>
+			</p>
+		</header>
+
+			<div class="post-description">
+				<p>One of the most important things that a software developer can do is to continuously
+learn. Learning can happen “on the job”, through experimentation, or reading and
+interacting with others in the community. Today, I want to talk about reading and
+interacting with others in the community.</p>
 
 
-</main>
+				<p>
+					<a href="http://localhost:4000/learning/2015/04/19/thrity-minutes-a-day.html">Continue Reading...</a>
+				<p>
+			</div>
+	</section>
+	
+	<!-- A single blog post -->
+	<section class="post">
+		<header class="post-header">
+			<div class="date">
+				<time datetime="2015-04-19T14:35:12-04:00"><span class="day">19</span> <span class="month-year">April 2015</span></time>
+			</div>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
-    <script src="/assets/js/vendor/modernizr.js"></script>
-    <script src="/assets/js/foundation.min.js"></script>
+			<h2>
+				<a href="http://localhost:4000/2015/04/19/welcome-to-my-random-thoughts.html">
+						Welcome
+				</a>
+			</h2>
+			<p class="post-meta">
+				
+			</p>
+		</header>
+
+			<div class="post-description">
+				<p>Hi, I’m Nicholas Watson. I’m a developer and leader. I’m constantly digging in to “tech” in order to deliver products and services. My interests consist of software languages, the internet of things, and big data. I currently serve as Vice President of Technology at Gleason Technology, Inc.</p>
+
+				<p>
+					<a href="http://localhost:4000/2015/04/19/welcome-to-my-random-thoughts.html">Continue Reading...</a>
+				<p>
+			</div>
+	</section>
+	
+</div>
+
+<nav class="pagination" role="navigation">
     
-    <script src="/assets/js/notepad.js"></script>
-    <script src="/assets/js/scripts.min.js"></script>
-    <script src="/assets/js/vendor/nprogress.js"></script>
+    <span class="newer-posts faded"><i class="fa fa-chevron-left"></i> Newer</span>
+    
 
-    <script>
-      $(document).foundation();
-    </script>
+
+    <span class="page-number">Page 1 of 1</span>
+    	
+    	<span class="older-posts faded">Older <i class="fa fa-chevron-right"></i></span>
+    	
+	</nav>
+
+      </div>
+    </div>
 
 
 <!-- Asynchronous Google Analytics snippet -->
@@ -202,10 +237,8 @@
   ga('create', 'UA-57714341-1', 'auto');
   ga('require', 'displayfeatures');
   ga('send', 'pageview');
-
 </script>
 
-<script>NProgress.start();var interval=setInterval(function(){NProgress.inc()},1000);jQuery(window).load(function(){clearInterval(interval);NProgress.done()});jQuery(window).unload(function(){NProgress.start()});</script>
 
 </body>
 </html>
