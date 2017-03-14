@@ -2,7 +2,7 @@
 layout: post
 title:  "Articles of Interest for the Week Ending April 24"
 date:   2015-04-26 23:57:00
-categories: articles, postgres, cloudkit, ruby, javascript
+categories: articles postgres cloudkit ruby javascript
 comments: true
 description: >
   This weeks articles of interest include a CloudKit introduction, managing large data sets in PostgreSQL, news on Rails 5, and basics that all developers should know about JavaScript.

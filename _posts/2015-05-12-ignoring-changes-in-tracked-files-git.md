@@ -2,7 +2,7 @@
 layout: post
 title:  "Ignoring Changes in Tracked Files with Git"
 date:   2015-05-12 08:18:00
-categories: learning, git
+categories: learning git
 comments: true
 description: >
   Ever need the ability to change a tracked file in git

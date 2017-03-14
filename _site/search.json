@@ -11,7 +11,7 @@
 		{
 		  "title"      : "Ignoring Changes in Tracked Files with Git",
 		  "category"   : "",
-		  "url"        : "http://localhost:4000/learning,/git/2015/05/12/ignoring-changes-in-tracked-files-git.html",
+		  "url"        : "http://localhost:4000/learning/git/2015/05/12/ignoring-changes-in-tracked-files-git.html",
 		  "date"       : "2015-05-12 04:18:00 -0400",
 		  "shortdate"  : "May 12, 2015"
 		} ,
@@ -19,7 +19,7 @@
 		{
 		  "title"      : "Articles of Interest for the Week Ending April 24",
 		  "category"   : "",
-		  "url"        : "http://localhost:4000/articles,/postgres,/cloudkit,/ruby,/javascript/2015/04/26/articles-of-interest-week-ending-april-24.html",
+		  "url"        : "http://localhost:4000/articles/postgres/cloudkit/ruby/javascript/2015/04/26/articles-of-interest-week-ending-april-24.html",
 		  "date"       : "2015-04-26 19:57:00 -0400",
 		  "shortdate"  : "April 26, 2015"
 		} ,
