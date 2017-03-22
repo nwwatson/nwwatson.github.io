@@ -72,6 +72,80 @@
 	<section class="post">
 		<header class="post-header">
 			<div class="date">
+				<time datetime="2017-03-14T22:07:18-04:00"><span class="day">14</span> <span class="month-year">March 2017</span></time>
+			</div>
+
+			<h2>
+				<a href="http://localhost:4000/2017/03/14/postgres-fu-for-faster-apis.html">
+						Postgres Fu For Faster Apis
+				</a>
+			</h2>
+			<p class="post-meta">
+				
+			</p>
+		</header>
+
+			<div class="post-description">
+				
+
+				<p>
+					<a href="http://localhost:4000/2017/03/14/postgres-fu-for-faster-apis.html">Continue Reading...</a>
+				<p>
+			</div>
+	</section>
+	
+	<!-- A single blog post -->
+	<section class="post">
+		<header class="post-header">
+			<div class="date">
+				<time datetime="2017-03-14T19:25:00-04:00"><span class="day">14</span> <span class="month-year">March 2017</span></time>
+			</div>
+
+			<h2>
+				<a href="http://localhost:4000/swift/vapor/postgresql/2017/03/14/vapor-blog.html">
+						Beginning Vapor: Lets Write a Blog
+				</a>
+			</h2>
+			<p class="post-meta">
+				<a class="post-category post-category-pure" href="#" title="Other posts from the Swift category">Swift</a>&nbsp;<a class="post-category post-category-pure" href="#" title="Other posts from the Vapor category">Vapor</a>&nbsp;<a class="post-category post-category-pure" href="#" title="Other posts from the Postgresql category">Postgresql</a>
+			</p>
+		</header>
+
+			<div class="post-description">
+				<p>Over 10 years ago, Ruby on Rails made a huge impact on me when I saw the
+“Blog in 15 Minutes” tutorial. The simple tutorial, in which a simple blog
+application was scaffolded show all that you needed to know in order to get
+started using Rails. The “Blog in 15 Minutes” tutorial is the gold standard for
+introducing a framework.</p>
+
+<p>When writing a tutorial, many authors focus on showing would-be developers all the
+features of the framework/language, but completely miss explain how to structure
+a cohesive application. Many tutorials show an application thats built in one file,
+or if they do create separate files, they create “buckets full of method” files
+which do not show new users how to break applications in to smaller components.</p>
+
+<p>My goal with this tutorial is to build a small blog built using Vapor, a server
+side framework for Swift. I’d like to cover the following topics:</p>
+
+<ul>
+  <li>Setup of Vapor on MacOS Sierra</li>
+  <li>The creation of a Vapor projects</li>
+  <li>Connecting the Vapor project to a database</li>
+  <li>Building a controller that will handle the CRUD methods for creating posts</li>
+  <li>Building Leaf templates to build the user interface.</li>
+</ul>
+
+
+				<p>
+					<a href="http://localhost:4000/swift/vapor/postgresql/2017/03/14/vapor-blog.html">Continue Reading...</a>
+				<p>
+			</div>
+	</section>
+	
+	<!-- A single blog post -->
+	<section class="post">
+		<header class="post-header">
+			<div class="date">
 				<time datetime="2015-07-30T17:00:00-04:00"><span class="day">30</span> <span class="month-year">July 2015</span></time>
 			</div>
 
@@ -103,6 +177,70 @@ written using the Ionic Framework.</p>
 	<section class="post">
 		<header class="post-header">
 			<div class="date">
+				<time datetime="2015-05-21T19:57:00-04:00"><span class="day">21</span> <span class="month-year">May 2015</span></time>
+			</div>
+
+			<h2>
+				<a href="http://localhost:4000/ruby,/rails/2015/05/21/getting-ruby-saml-to-work-with-azure.html">
+						Getting ruby-saml to work with Azure AD
+				</a>
+			</h2>
+			<p class="post-meta">
+				<a class="post-category post-category-pure" href="#" title="Other posts from the Ruby, category">Ruby,</a>&nbsp;<a class="post-category post-category-pure" href="#" title="Other posts from the Rails category">Rails</a>
+			</p>
+		</header>
+
+			<div class="post-description">
+				<p>I’m going to make this short and sweet. So you’ve been tasked with using SAML to authenticate users with  Azure AD. Sure, there are other mechanisms available, but this client wants SAML. No problem. Knowning nothing about AD or SAML, but having some experience with OAuth, you think “This couldn’t be that hard”. Then you find out SAML 2.0 is a little more complicated than OAuth.</p>
+
+<p>I’m not going to walk you though a example on how to build. There are examples available, specifically <a href="https://github.com/onelogin/ruby-saml-example">ruby-saml-example</a>. I’ll use this to properly show you how to configure Azure AD.</p>
+
+<h2 id="signup-for-an-azure-account">Signup for an Azure account</h2>
+
+<p>While I’m happy to write this quick tutorial, I’m not going to walk you through create an Azure account. Its self explanitory. You can do it.</p>
+
+<h2 id="create-an-active-directory">Create an Active Directory</h2>
+
+<h2 id="add-an-application">Add an Application</h2>
+
+<h2 id="configure-ruby-saml-settings">Configure ruby-saml Settings</h2>
+
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code>  <span class="n">idp_metadata_parser</span> <span class="o">=</span> <span class="no">OneLogin</span><span class="o">::</span><span class="no">RubySaml</span><span class="o">::</span><span class="no">IdpMetadataParser</span><span class="p">.</span><span class="nf">new</span>
+  <span class="c1"># This does all the hard work. it grabs the federation metadata from Azure</span>
+  <span class="n">settings</span> <span class="o">=</span> <span class="n">idp_metadata_parser</span><span class="p">.</span><span class="nf">parse_remote</span><span class="p">(</span><span class="s2">"https://login.microsoftonline.com/FunnyImNotGivingYouThis/federationmetadata/2007-06/federationmetadata.xml"</span><span class="p">)</span>
+  
+  <span class="c1"># This is the URL that Azure AD calls back after a successful login</span>
+  <span class="n">settings</span><span class="p">.</span><span class="nf">assertion_consumer_service_url</span> <span class="o">=</span> <span class="s2">"http://localhost:3000/saml/acs"</span>
+  
+  <span class="c1"># This URL will be calledback after a logout event</span>
+  <span class="n">settings</span><span class="p">.</span><span class="nf">assertion_consumer_logout_service_url</span> <span class="o">=</span> <span class="s2">"http://localhost:3000/saml/logout"</span>
+  
+  <span class="c1"># Microsoft calls this the Client ID. Copy it from your application's </span>
+  <span class="c1"># properties in Azure and drop it here.</span>
+  <span class="n">settings</span><span class="p">.</span><span class="nf">issuer</span> <span class="o">=</span> <span class="s2">"55555555-5555-5555-5555-555555555555"</span>
+  
+  <span class="c1"># You need to copy the  X509 certificate out of the &lt;ds:Signature&gt; node of the</span>
+  <span class="c1"># federation metadata xml file. Then go to https://www.samltool.com/fingerprint.php</span>
+  <span class="c1"># and paste it in to the x509 cert field. Use the Formatted Fingerprint in the line </span>
+  <span class="c1"># below</span>
+  <span class="n">settings</span><span class="p">.</span><span class="nf">idp_cert_fingerprint</span> <span class="o">=</span> <span class="s2">"It:Is:So:me:Th:in:gL:ik:eT:hi:sB:ut:Re:al"</span>
+  
+  <span class="c1"># You shouldn't have to change this line. Works like a champ.</span>
+  <span class="n">settings</span><span class="p">.</span><span class="nf">name_identifier_format</span> <span class="o">=</span> <span class="s2">"urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"</span>
+</code></pre>
+</div>
+
+
+				<p>
+					<a href="http://localhost:4000/ruby,/rails/2015/05/21/getting-ruby-saml-to-work-with-azure.html">Continue Reading...</a>
+				<p>
+			</div>
+	</section>
+	
+	<!-- A single blog post -->
+	<section class="post">
+		<header class="post-header">
+			<div class="date">
 				<time datetime="2015-05-12T04:18:00-04:00"><span class="day">12</span> <span class="month-year">May 2015</span></time>
 			</div>
 
@@ -126,96 +264,15 @@ written using the Ionic Framework.</p>
 			</div>
 	</section>
 	
-	<!-- A single blog post -->
-	<section class="post">
-		<header class="post-header">
-			<div class="date">
-				<time datetime="2015-04-26T19:57:00-04:00"><span class="day">26</span> <span class="month-year">April 2015</span></time>
-			</div>
-
-			<h2>
-				<a href="http://localhost:4000/articles/postgres/cloudkit/ruby/javascript/2015/04/26/articles-of-interest-week-ending-april-24.html">
-						Articles of Interest for the Week Ending April 24
-				</a>
-			</h2>
-			<p class="post-meta">
-				<a class="post-category post-category-pure" href="#" title="Other posts from the Articles category">Articles</a>&nbsp;<a class="post-category post-category-pure" href="#" title="Other posts from the Postgres category">Postgres</a>&nbsp;<a class="post-category post-category-pure" href="#" title="Other posts from the Cloudkit category">Cloudkit</a>&nbsp;<a class="post-category post-category-pure" href="#" title="Other posts from the Ruby category">Ruby</a>&nbsp;<a class="post-category post-category-pure" href="#" title="Other posts from the Javascript category">Javascript</a>
-			</p>
-		</header>
-
-			<div class="post-description">
-				<p>I like to share articles with my team that I find interesting. This weeks articles of interest include a CloudKit introduction, managing large data sets in PostgreSQL, news on Rails 5, and basics that all developers should know about JavaScript.</p>
-
-
-				<p>
-					<a href="http://localhost:4000/articles/postgres/cloudkit/ruby/javascript/2015/04/26/articles-of-interest-week-ending-april-24.html">Continue Reading...</a>
-				<p>
-			</div>
-	</section>
-	
-	<!-- A single blog post -->
-	<section class="post">
-		<header class="post-header">
-			<div class="date">
-				<time datetime="2015-04-19T15:35:12-04:00"><span class="day">19</span> <span class="month-year">April 2015</span></time>
-			</div>
-
-			<h2>
-				<a href="http://localhost:4000/learning/2015/04/19/thrity-minutes-a-day.html">
-						The Importance of 30 Minutes a Day
-				</a>
-			</h2>
-			<p class="post-meta">
-				<a class="post-category post-category-pure" href="#" title="Other posts from the Learning category">Learning</a>
-			</p>
-		</header>
-
-			<div class="post-description">
-				<p>One of the most important things that a software developer can do is to continuously
-learn. Learning can happen “on the job”, through experimentation, or reading and
-interacting with others in the community. Today, I want to talk about reading and
-interacting with others in the community.</p>
-
-
-				<p>
-					<a href="http://localhost:4000/learning/2015/04/19/thrity-minutes-a-day.html">Continue Reading...</a>
-				<p>
-			</div>
-	</section>
-	
-	<!-- A single blog post -->
-	<section class="post">
-		<header class="post-header">
-			<div class="date">
-				<time datetime="2015-04-19T14:35:12-04:00"><span class="day">19</span> <span class="month-year">April 2015</span></time>
-			</div>
-
-			<h2>
-				<a href="http://localhost:4000/2015/04/19/welcome-to-my-random-thoughts.html">
-						Welcome
-				</a>
-			</h2>
-			<p class="post-meta">
-				
-			</p>
-		</header>
-
-			<div class="post-description">
-				<p>Hi, I’m Nicholas Watson. I’m a developer and leader. I’m constantly digging in to “tech” in order to deliver products and services. My interests consist of software languages, the internet of things, and big data. I currently serve as Vice President of Technology at Gleason Technology, Inc.</p>
-
-				<p>
-					<a href="http://localhost:4000/2015/04/19/welcome-to-my-random-thoughts.html">Continue Reading...</a>
-				<p>
-			</div>
-	</section>
-	
 </div>
 
 <nav class="pagination" role="navigation">
     
 
 
-    <span class="page-number">Page 1 of 1</span>
+    <span class="page-number">Page 1 of 2</span>
+    	
+        <a class="older-posts" href="http://localhost:4000/page2/">Older <i class="fa fa-chevron-right"></i></a>
     	
 	</nav>
 
