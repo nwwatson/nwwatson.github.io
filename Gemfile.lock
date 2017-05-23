@@ -52,9 +52,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (~> 3.4, >= 3.4.2)
+  jekyll
   jekyll-gist (~> 1.4)
   jekyll-paginate (~> 1.1)
 
 BUNDLED WITH
-   1.13.7
+   1.14.6

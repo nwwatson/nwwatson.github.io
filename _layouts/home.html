@@ -1,17 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 {% include head.html %}
 </head>
-<body class="home-template" itemscope itemtype="http://schema.org/WebPage">
-
-  <div id="layout" class="pure-g">
-      {% include left_sidebar.html %}
-      <div class="content pure-u-1 pure-u-md-3-4">
-        {{ content }}
-      </div>
-    </div>
-
+<body>
+{{ content }}
 {% include scripts.html %}
 </body>
 </html>

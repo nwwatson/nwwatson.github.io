@@ -1,22 +1,6 @@
 [
 	
 		{
-		  "title"      : "Postgres Fu For Faster Apis",
-		  "category"   : "",
-		  "url"        : "http://localhost:4000/2017/03/14/postgres-fu-for-faster-apis.html",
-		  "date"       : "2017-03-14 22:07:18 -0400",
-		  "shortdate"  : "March 14, 2017"
-		} ,
-	
-		{
-		  "title"      : "Beginning Vapor: Lets Write a Blog",
-		  "category"   : "",
-		  "url"        : "http://localhost:4000/swift/vapor/postgresql/2017/03/14/vapor-blog.html",
-		  "date"       : "2017-03-14 19:25:00 -0400",
-		  "shortdate"  : "March 14, 2017"
-		} ,
-	
-		{
 		  "title"      : "PushIonic - A Gem For Sending Push Notifications With Ionic.io",
 		  "category"   : "",
 		  "url"        : "http://localhost:4000/ruby/ionic/gem/2015/07/30/quick-gem-for-ionic-push-notifications.html",
@@ -25,27 +9,11 @@
 		} ,
 	
 		{
-		  "title"      : "Getting ruby-saml to work with Azure AD",
-		  "category"   : "",
-		  "url"        : "http://localhost:4000/ruby,/rails/2015/05/21/getting-ruby-saml-to-work-with-azure.html",
-		  "date"       : "2015-05-21 19:57:00 -0400",
-		  "shortdate"  : "May 21, 2015"
-		} ,
-	
-		{
 		  "title"      : "Ignoring Changes in Tracked Files with Git",
 		  "category"   : "",
 		  "url"        : "http://localhost:4000/learning/git/2015/05/12/ignoring-changes-in-tracked-files-git.html",
 		  "date"       : "2015-05-12 04:18:00 -0400",
 		  "shortdate"  : "May 12, 2015"
-		} ,
-	
-		{
-		  "title"      : "Articles of Interest for the Week Ending May 1",
-		  "category"   : "",
-		  "url"        : "http://localhost:4000/ruby,/rails/2015/05/01/articles-of-interest-week-ending-may-1.html",
-		  "date"       : "2015-05-01 19:57:00 -0400",
-		  "shortdate"  : "May 01, 2015"
 		} ,
 	
 		{

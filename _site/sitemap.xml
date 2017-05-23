@@ -18,10 +18,6 @@
     </url>
     
     <url>
-        <loc>http://localhost:4000/css/main.css</loc>
-    </url>
-    
-    <url>
         <loc>http://localhost:4000/search.json</loc>
     </url>
     
@@ -29,34 +25,14 @@
         <loc>http://localhost:4000/sitemap.xml</loc>
     </url>
     
-    <url>
-        <loc>http://localhost:4000/page2/</loc>
-    </url>
-    
 
-    
-    <url>
-        <loc>http://localhost:4000/2017/03/14/postgres-fu-for-faster-apis.html</loc>
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/swift/vapor/postgresql/2017/03/14/vapor-blog.html</loc>
-    </url>
     
     <url>
         <loc>http://localhost:4000/ruby/ionic/gem/2015/07/30/quick-gem-for-ionic-push-notifications.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/ruby,/rails/2015/05/21/getting-ruby-saml-to-work-with-azure.html</loc>
-    </url>
-    
-    <url>
         <loc>http://localhost:4000/learning/git/2015/05/12/ignoring-changes-in-tracked-files-git.html</loc>
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/ruby,/rails/2015/05/01/articles-of-interest-week-ending-may-1.html</loc>
     </url>
     
     <url>

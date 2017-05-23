@@ -1,51 +1,19 @@
 ---
 layout: home
-title: The Blog of Nicholas W. Watson
-description: ""
+title: NWW Solutions
+description: "NWW Solutions Technology Consulting"
 headline:
 tags:
 ---
-<div class="posts">
-	{% for post in paginator.posts %}
-	<!-- A single blog post -->
-	<section class="post">
-		<header class="post-header">
-			<div class="date">
-				<time datetime="{{ post.date | date_to_xmlschema }}"><span class="day">{{ post.date | date: "%d" }}</span> <span class="month-year">{{ post.date | date: "%B %Y" }}</span></time>
-			</div>
-
-			<h2>
-				<a href="{{ site.url }}{{ post.url }}">
-						{{ post.title }}
-				</a>
-			</h2>
-			<p class="post-meta">
-				{% for tag in post.categories %}<a class="post-category post-category-pure" href="#" title="Other posts from the {{ tag | capitalize }} category">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}
-			</p>
-		</header>
-
-			<div class="post-description">
-				{{ post.excerpt }}
-				<p>
-					<a href="{{ site.url }}{{ post.url }}">Continue Reading...</a>
-				<p>
-			</div>
-	</section>
-	{% endfor %}
+<div class="splash-container">
+  <div class="splash">
+    <h1 class="splash-head">NWW Solutions</h1>
+    <p class="splash-subhead">
+        NWW Solutions is an experienced software consulting company that specializes
+        rapidly constructing and launching web and mobile based software.
+    </p>
+    <p>
+      <a href="mailto:nick@nwwsolutions.com" class="pure-button pure-button-primary">Contact Us</a>
+    </p>
+  </div>
 </div>
-
-<nav class="pagination" role="navigation">
-    {% if paginator.previous_page %}
-	    {% if paginator.previous_page == 1 %}
-	    <a class="newer-posts" href="{{ site.url }}"><i class="fa fa-chevron-left"></i> Newer</a>
-	    {% else %}
-	    <a class="newer-posts" href="{{ site.url }}/page{{ paginator.previous_page }}"><i class="fa fa-chevron-left"></i> Newer</a>
-	    {% endif %}
-    {% endif %}
-
-
-    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    	{% if paginator.next_page %}
-        <a class="older-posts" href="{{ site.url }}/page{{ paginator.next_page }}/">Older <i class="fa fa-chevron-right"></i></a>
-    	{% endif %}
-	</nav>
