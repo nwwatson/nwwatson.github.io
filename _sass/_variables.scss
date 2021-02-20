@@ -1,0 +1,25 @@
+:root {
+  --base-family: Inter, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+
+  /* Font sizes */
+  --base-size: 112.5%;
+  --base-ratio: 1.2;
+  --text-xs: 0.75em;
+  --text-sm: 0.875em;
+  --text-base: 1rem;
+  --text-lg: 1.125em;
+  --text-xl: 1.25em;
+  --text-2xl: 1.5em;
+  --text-3xl: 1.875em;
+  --text-4xl: 2.25em;
+  --text-5xl: 3em;
+
+  /* Colors */
+  --white: #ffffff;
+  --blue: #0d6efd !default;
+  --primary: $blue !default;
+
+  --text-color: #111;
+}
+
+

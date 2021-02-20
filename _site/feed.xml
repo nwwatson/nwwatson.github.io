@@ -1,223 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>NWW Solutions</title>
-    <description>NWW Solutions is an experienced software consulting company that specializes rapidly constructing and launching web and mobile based software.
-</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 28 May 2018 15:36:58 -0400</pubDate>
-    <lastBuildDate>Mon, 28 May 2018 15:36:58 -0400</lastBuildDate>
-    <generator>Jekyll v3.4.2</generator>
-    
-      <item>
-        <title>PushIonic - A Gem For Sending Push Notifications With Ionic.io</title>
-        <description>&lt;p&gt;We are in the the middle of adding push notificaitons to our mobile application
-and started to look at available push notification services. We took a look
-at all the usual suspects such as Amazon SMS, Parse and Pusher. One service
-that intrigued us with Ionic Push Notifications, because our application is
-written using the Ionic Framework.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://nickonsoftware.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://nickonsoftware.com/" rel="alternate" type="text/html" /><updated>2021-02-19T15:46:12-05:00</updated><id>https://nickonsoftware.com/feed.xml</id><title type="html">Nicholas W. Watson</title><subtitle>Hello! My name is Nick and I help companies conceptualize, build and launch software.</subtitle><author><name>Nicholas W. Watson</name><email>nwwatson@hey.com</email></author><entry><title type="html">Welcome to Jekyll!</title><link href="https://nickonsoftware.com/jekyll/update/2021/02/18/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2021-02-18T14:15:23-05:00</published><updated>2021-02-18T14:15:23-05:00</updated><id>https://nickonsoftware.com/jekyll/update/2021/02/18/welcome-to-jekyll</id><content type="html" xml:base="https://nickonsoftware.com/jekyll/update/2021/02/18/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
-&lt;!--more--&gt;
+&lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
 
-&lt;p&gt;In order to test things out, we created a simple gem that would allow us to
-send push notifications using the service. &lt;a href=&quot;https://github.com/nwwatson/ionic_push&quot;&gt;IonicPush&lt;/a&gt; is a Ruby gem that provides
-a simple to use interface with Ionic.io’s Push Notification service. Work on this
-is on-going, however the current version available works completely.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR-MONTH-DAY-title.MARKUP&lt;/code&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+&lt;p&gt;Where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR&lt;/code&gt; is a four-digit number, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MONTH&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DAY&lt;/code&gt; are both two-digit numbers, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MARKUP&lt;/code&gt; is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
-&lt;p&gt;Add the following to your Gemfile and bundle install&lt;/p&gt;
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem 'ionic_push', github: 'nwwatson/ionic_push', branch: 'master'
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;Tom&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &apos;Hi, Tom&apos; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Run the Rails generator to install the initializer in to your Rails project.&lt;/p&gt;
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle exec rails g ionic_push:install
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
-&lt;p&gt;Configure the ionic_push.rb file within config/initializers. You can view the environment
-variables that are there, or change them for someting else.&lt;/p&gt;
+&lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/0c12bfe317fc8c96e8b0.js&quot;&gt; &lt;/script&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR-MONTH-DAY-title.MARKUP&lt;/code&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;sending-a-push-notification&quot;&gt;Sending a Push Notification&lt;/h2&gt;
+&lt;p&gt;Where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR&lt;/code&gt; is a four-digit number, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MONTH&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DAY&lt;/code&gt; are both two-digit numbers, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MARKUP&lt;/code&gt; is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
-&lt;p&gt;Sending a push notification is simple. All you need to have is an array of device tokens and a message.&lt;/p&gt;
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/bcf7483dc464d1ad5835.js&quot;&gt; &lt;/script&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;Tom&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &apos;Hi, Tom&apos; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;h2 id=&quot;wrapping-it-up&quot;&gt;Wrapping It Up&lt;/h2&gt;
-
-&lt;p&gt;Our experience so far has been really positive. Ionic Push Notifications were simple to integrate
-&lt;a href=&quot;http://docs.ionic.io/v1.0/docs/push-from-scratch&quot;&gt;by following their online documentation&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 30 Jul 2015 17:00:00 -0400</pubDate>
-        <link>http://localhost:4000/ruby/ionic/gem/2015/07/30/quick-gem-for-ionic-push-notifications.html</link>
-        <guid isPermaLink="true">http://localhost:4000/ruby/ionic/gem/2015/07/30/quick-gem-for-ionic-push-notifications.html</guid>
-        
-        
-        <category>ruby</category>
-        
-        <category>ionic</category>
-        
-        <category>gem</category>
-        
-      </item>
-    
-      <item>
-        <title>Ignoring Changes in Tracked Files with Git</title>
-        <description>&lt;p&gt;We use Rubinius in production, but in development Rubinuis is slow. Those few seconds of waiting for Rubinius to compile all your Ruby files add up and I’m impatient.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;To combat this problem, I like to be able to change the .ruby-version file (we use rbenv) to use the latest version of MRI. Naturally, we don’t want to check this in. Luckily, we can do this with git:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git update-index --assume-unchanged &amp;lt;file&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;When we want to track it again&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git update-index --no-assume-unchanged &amp;lt;file&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Tue, 12 May 2015 04:18:00 -0400</pubDate>
-        <link>http://localhost:4000/learning/git/2015/05/12/ignoring-changes-in-tracked-files-git.html</link>
-        <guid isPermaLink="true">http://localhost:4000/learning/git/2015/05/12/ignoring-changes-in-tracked-files-git.html</guid>
-        
-        
-        <category>learning</category>
-        
-        <category>git</category>
-        
-      </item>
-    
-      <item>
-        <title>Articles of Interest for the Week Ending April 24</title>
-        <description>&lt;p&gt;I like to share articles with my team that I find interesting. This weeks articles of interest include a CloudKit introduction, managing large data sets in PostgreSQL, news on Rails 5, and basics that all developers should know about JavaScript.&lt;/p&gt;
-
-&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;managing-big-enough-data-in-postgres&quot;&gt;&lt;a href=&quot;http://bit.ly/1QnKBDV&quot;&gt;Managing big enough data in postgres&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;One of the largest problems for developers is keeping their applications fast and available in the face of
-large data sets. Many automatically look for NoSQL solutions to solve the problem tradinging data integrity and ACID compliance for speed. While NoSQL solutions have there place, its good to know how to tune your current
-relational database. This quick little article does that, explainging table table inheritance and table spaces.&lt;/p&gt;
-
-&lt;h2 id=&quot;working-with-cloudkit-in-ios-8&quot;&gt;&lt;a href=&quot;http://bit.ly/1EvjEJk&quot;&gt;Working with CloudKit in iOS 8&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;When Apple released CloudKit and Swift at WWDC 2014, I was intregued. From a distant view, it look as though Apple lowered the cost of entry for building cloud connected systems. Now, I realize that CloudKit, and the use of Apple’s cloud services is only available within its own ecosystem, which is a severe limitation if you need to build for iOS and another platform. However, in my minimal time I have spent with Swift, I’ve liked it. Building something with CloudKit is a goal for me, and this article just might be the start.&lt;/p&gt;
-
-&lt;h2 id=&quot;7-deadly-sins-of-ruby-metaprogramming&quot;&gt;&lt;a href=&quot;http://bit.ly/1HISXC3&quot;&gt;7 Deadly Sins of Ruby Metaprogramming&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;Learning to metaprogram in Ruby will add a whole lot of possiblities to your code. Once you get started, your tempted to do it everywhere, however you must do so wisely. 7 Deadly Sins of Ruby Metaprogramming explains some of the gotchas that you can encounter. Its a must read for anyone interested in metaprogramming in Ruby.&lt;/p&gt;
-
-&lt;h2 id=&quot;why-rails-5--turbolinks-30--action-cable-matter-and-why-dhh-was-right-all-along&quot;&gt;&lt;a href=&quot;http://bit.ly/1FpKeV6&quot;&gt;Why Rails 5 / Turbolinks 3.0 / Action Cable matter, and why @dhh was right all along&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;This article gets a lot right. The advent of the JavaScript single page application has drastically complicated web development. While I have written single page applications, I can’t say that I enjoy it. It doesn’t matter if its Angular, Ember or Backbone, it adds additional complexity that makes building applications take more time. The additional time and cost associated with these applications means that its going to take you longer to get your product to market. What I loved about Rails is the ability to build web applications fast. I’m glad that the team takes ease of use seriously. I also can’t wait to see web sockets and web api baked in.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-basics-of-variable-scope-in-javascript&quot;&gt;&lt;a href=&quot;http://bit.ly/1GmYav1&quot;&gt;The Basics Of Variable Scope In JavaScript&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;Just getting started in JavaScript? Make sure you understand scope. Read about scope until you understand it. Once you understand scope, you can then move on to master the language. Once your done with scope, you may want to move on to understanding the &lt;a href=&quot;http://bit.ly/1OWKw6F&quot;&gt;Common Misconceptions About Inheritance in JavaScript&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Interested in more? Follow &lt;a href=&quot;http://bit.ly/1DSTSgu&quot;&gt;Tots on Programming on Flipboard&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 26 Apr 2015 19:57:00 -0400</pubDate>
-        <link>http://localhost:4000/articles/postgres/cloudkit/ruby/javascript/2015/04/26/articles-of-interest-week-ending-april-24.html</link>
-        <guid isPermaLink="true">http://localhost:4000/articles/postgres/cloudkit/ruby/javascript/2015/04/26/articles-of-interest-week-ending-april-24.html</guid>
-        
-        
-        <category>articles</category>
-        
-        <category>postgres</category>
-        
-        <category>cloudkit</category>
-        
-        <category>ruby</category>
-        
-        <category>javascript</category>
-        
-      </item>
-    
-      <item>
-        <title>The Importance of 30 Minutes a Day</title>
-        <description>&lt;p&gt;One of the most important things that a software developer can do is to continuously
-learn. Learning can happen “on the job”, through experimentation, or reading and
-interacting with others in the community. Today, I want to talk about reading and
-interacting with others in the community.
-&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;p&gt;Here’s how most developers work; they encounter a problem on the job and immediately
-reach out to google for a solution. The first person who
-has a solution that “fixes” their problem wins. The issue with this approach is
-that you don’t know if the solution you’ve chosen is the best solution for your situation.
-What do you have to compare it to? Why did you select it? Is there a better
-solution out there?&lt;/p&gt;
-
-&lt;p&gt;In order to combat this, I’ve encouraged my team members to take the first 30
-minutes of each day to learn. This can be done through blogs, newsletters, or news
-readers such as FlipBoard and Zite. Lets break this in to a quick process which
-occurs daily.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Choose topics that interest you.&lt;/strong&gt; Focus on the things you like doing and discover
-new techniques, open source libraries or tools that can help you. Take the time to
-compare what you currently do to what the author recommends. Is their way better?
-Can you improve the author’s technique? Can you contribute anything?&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Identify something your weak at, and find sources to help you.&lt;/strong&gt; Everyone has a
-weakness. Maybe you struggle with relational databases, or you just don’t understand
-why anyone would want to use a graph database. Choose a topic that you feel that you
-need to understand better and read up on it daily.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Share what you’ve read with co-workers.&lt;/strong&gt; Sharing is an important part of the learning
-process. By sharing, you’ll gain other vantage points on a particular issue. You will
- also be able to learn if others around you have similar interests or have complimentary
- interests. If you’re the only developer, join local groups or connect on social networks
- with others.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Put it to practice.&lt;/strong&gt; Put your new found skills to practice, but be carefully not to
-insert your new skill or technique in an area which will ultimately have a negative
-impact on your work. Its always nice to find a awesome new library, but having too
-many awesome new libraries in your project will ultimately cause clutter and lead to
-poor code quality.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Contribute back.&lt;/strong&gt; Have you found a better way to solve a problem? Have you modified
-someone else’s technique for use in your daily work? Contribute it back using the
-blogs comments, or blog about it yourself.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Learning is continuous.&lt;/strong&gt; Don’t just be a Googler, searching aimlessly for solutions.
-Take the time to learn emerging technologies, understand their costs and benefits, and
-grow your knowledge so that the next time you encounter a problem you are less likely to
-go to Google and more likely to solve the problem yourself.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 19 Apr 2015 15:35:12 -0400</pubDate>
-        <link>http://localhost:4000/learning/2015/04/19/thrity-minutes-a-day.html</link>
-        <guid isPermaLink="true">http://localhost:4000/learning/2015/04/19/thrity-minutes-a-day.html</guid>
-        
-        
-        <category>learning</category>
-        
-      </item>
-    
-      <item>
-        <title>Welcome</title>
-        <description>&lt;p&gt;Hi, I’m Nicholas Watson. I’m a developer and leader. I’m constantly digging in to “tech” in order to deliver products and services. My interests consist of software languages, the internet of things, and big data. I currently serve as Vice President of Technology at Gleason Technology, Inc.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 19 Apr 2015 14:35:12 -0400</pubDate>
-        <link>http://localhost:4000/2015/04/19/welcome-to-my-random-thoughts.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2015/04/19/welcome-to-my-random-thoughts.html</guid>
-        
-        
-      </item>
-    
-  </channel>
-</rss>
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name>Nicholas W. Watson</name><email>nwwatson@hey.com</email></author><category term="jekyll" /><category term="update" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>

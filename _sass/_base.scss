@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+
+body {
+  font-size: var(--base-size);
+  font-family: var(--base-family);
+  color: var(--text-color);
+}
